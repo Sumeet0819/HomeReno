@@ -1,0 +1,48 @@
+.testimonials-contianer{
+    height: 100vh;
+    width: 100%; 
+    overflow: hidden;
+
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
+}
+.content h2{
+    text-align: center;
+    font-size: 3rem;
+    color: #252525;
+}
+.test-1{
+    display: flex;
+    width: calc(350px *8);
+    overflow: hidden;
+}
+.test-2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    width: calc(350px *8);
+    overflow: hidden;
+}
+.testimonial{
+    padding: 20px;
+    background-color: whitesmoke;
+    width: 350px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: start;
+    justify-content: center;
+    perspective: 100px;
+    transition: all .5s ease-in-out;
+}
+.testimonial:hover{
+    background-color: #252525;
+    color: white;
+    transform: translateY(-10px);
+}

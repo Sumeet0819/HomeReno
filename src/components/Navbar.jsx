@@ -1,0 +1,47 @@
+import React, { useState, useEffect } from 'react';
+
+export default function Navbar() {
+  const [fix, setFix] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Function to handle the fixed header on scroll
+  function fixed() {
+    if (window.scrollY >= 10) {
+      setFix(true);
+    } else {
+      setFix(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', fixed);
+    return () => {
+      window.removeEventListener('scroll', fixed);
+    };
+  }, []);
+
+  // Function to toggle the hamburger menu
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <header>
+      <nav className={`header ${fix ? 'fixed' : ''}`}>
+        <a href="/" className="logo">Your Logo</a>
+        <div className={`nav-links ${menuOpen ? 'menu-active' : ''}`}>
+          <a href="/">Home</a>
+          <a href="/">Our Services</a>
+          <a href="/">Our Projects</a>
+          <a href="/">Cost Calculator</a>
+          <a href="/">Contact Us</a>
+        </div>
+        <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+  );
+}
