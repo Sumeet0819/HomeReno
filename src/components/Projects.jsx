@@ -1,23 +1,51 @@
-import React from "react";
-import Article from "./Article";
+import React from 'react'
+import './Project.css'
 export default function Projects() {
   return (
-    <>
-    <section>
-      <div className="project">
-              <h1>Get Inspired!</h1>
-              <p>⚡⛱️🌟Check out some of the quality work we’ve done!</p>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
-                atque sit sed, et doloribus inventore sint modi voluptatum alias,
-                laudantium quos? Tenetur, est ullam quas aliquid recusandae officia quam
-                atque.
-              </p>
-              <Article/>
+    <div className='project-container'>
+        <div className="project-header">
+            <span> 
+                <h1>Our Projects</h1>
+                <p id='p'></p>
+                <p>Transforming Spaces, Elevating Lives: Expert Renovations with a Creative Touch</p>
+            </span> 
         </div>
-    </section>
-
-  </>
-  
-  );
+        <div className="details-container">
+          <div className="project-content">
+          <span> 
+                <h1>Modern Kitchen</h1>
+                <p id='p'></p>
+                <p>This renovated kitchen features a modern, minimalist design with white cabinetry, a wooden island countertop, and light hardwood flooring. Natural light floods the space through a large glass wall and ceiling, creating an open and airy atmosphere. Sleek built-in appliances and contemporary light fixtures add to the kitchen's elegant and functional appeal.</p>
+            </span>
+          </div>
+          <div className="project-image">
+               <img  src={require('../images/House (7).jpg')} alt="Card image cap"/>
+          </div>
+        </div>
+        <div className="details-container">
+          <div className="project-content">
+          <span> 
+                <h1>Hallway Renovation</h1>
+                <p id='p'></p>
+                <p>This hallway renovation showcases a clean and modern look with glossy white floor tiles and a sleek staircase. The space is illuminated by recessed ceiling lights and soft blue LED accent lighting, creating a serene and contemporary ambiance. The design features smooth white walls and built-in storage, contributing to a minimalist and functional aesthetic.</p>
+            </span>
+          </div>
+          <div className="project-image">
+               <img  src={require('../images/House (16).jpg')} alt="Card image cap"/>
+          </div>
+        </div>
+        <div className="details-container">
+          <div className="project-content">
+          <span> 
+                <h1>Kitchen Renovation</h1>
+                <p id='p'></p>
+                <p>This kitchen renovation features a striking contrast between dark cabinetry and bright white countertops. A large farmhouse sink, brass fixtures, and black appliances add a touch of elegance to the space. The kitchen is illuminated by natural light from a skylight, enhancing the modern design and highlighting the spacious island, which offers ample workspace and seating. The overall aesthetic is sophisticated and contemporary, with clean lines and a functional layout.</p>
+            </span>
+          </div>
+          <div className="project-image">
+               <img  src={require('../images/House (13).jpg')} alt="Card image cap"/>
+          </div>
+        </div>
+    </div>
+  )
 }

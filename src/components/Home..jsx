@@ -7,10 +7,9 @@ const SplitContainer =() => {
     <>
       <div className="split-container">
         <div className="left-pane">
-          <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+          <h1>InfiniteHue Decor</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quam
-            cumque doloribus
+          "InfiniteHue Decor: Breathing new life into your spaces with boundless creativity and flawless renovation, where every transformation tells a unique story."
           </p>
           <div className="btn-1">
             <button className="button type1">

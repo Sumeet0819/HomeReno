@@ -1,18 +1,24 @@
 .testimonials-contianer{
-    height: 100vh;
+    height: auto;
     width: 100%; 
     overflow: hidden;
 
 }
 .content{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top:20px;
 }
+.content h1{
+    text-align: center;
+    font-size: 5rem;
+    color: #252525;
+}
 .content h2{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #252525;
 }
 .test-1{
@@ -46,3 +52,19 @@
     color: white;
     transform: translateY(-10px);
 }
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  
+.testimonials-contianer{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+  }

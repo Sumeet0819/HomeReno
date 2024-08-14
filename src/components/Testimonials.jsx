@@ -3,9 +3,9 @@ import './Testimonials.css'
 import Marquee from 'react-fast-marquee'
 export default function Testimonials() {
   return (
-    <div className='testimonials-contianer'>
-        
+    <div className='testimonials-contianer'>     
                 <div className="content">
+                    <h1>Testimonials</h1>
                     <h2>"Hear the Buzz: What People Are Saying About Us"</h2>
                 </div>
                 <Marquee delay={5}>

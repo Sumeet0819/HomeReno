@@ -36,7 +36,7 @@
         left: calc(var(--width) * -3);
     }
 }
-img:hover{
+.slider .list .item img:hover{
     transform: translateZ(10px);
     filter: brightness(80%)
 }

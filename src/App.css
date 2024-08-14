@@ -3,17 +3,19 @@ header nav{
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   position: fixed;
   z-index:100;
   top:0;
   padding: 0px 0px 10px 10px ;
   background-color: linear-gradient(to right, #f8b500, #fceabb);
+  transition: all 0.5s ease-in-out;
 }
 header a {
   margin-right: 20px;
   text-decoration: none;
   color: #252525;
-  padding: 10px;
+  padding: 20px;
   font-weight: 600;
 }
 header .fixed {
@@ -22,7 +24,11 @@ header .fixed {
   box-shadow: 0 1px 4px hsl(0 4% 14% /10%);
   transition: .1s ease-in-out;
 }
-
+header .logo{
+  margin-right:auto ;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 .nav-links {
   display: flex;
   gap: 20px;
@@ -40,6 +46,7 @@ header .fixed {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  margin-right:50px;
 }
 
 .hamburger span {
@@ -113,13 +120,14 @@ header .fixed {
   padding: 20px;
 }
 .left-pane h1 {
-  font-size: 3.5rem;
+  font-size: 6rem;
   margin-left: 40px;
   color: #252525;
+  font-weight: 900;
   margin-top: 60px;
 }
 .left-pane p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-left: 40px;
 }
 .right-pane {
@@ -131,6 +139,11 @@ header .fixed {
   object-fit: fill;
   animation: myAnim 2s ease-in-out;
   transition: all 0.5s ease-in-out;
+  perspective: 100px;
+  cursor: pointer;
+}
+.right-pane img:hover{
+  transform: translateY(-20px);
 }
 .btn{
   display: flex;
@@ -153,7 +166,7 @@ header .fixed {
   cursor: pointer;
   border: 2px solid #252525;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 5px;
   color: #333;
   transition: all 0.5s ease-in-out;
 }
@@ -225,165 +238,43 @@ header .fixed {
   }
 }
 /* Base styles */
-.tagline {
-  background-color: #252525;
+.tagline-container {
+  background-color: #f2eae3;
   height: 100vh;
-  margin-top: 40px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  color: #252525;
 }
-
-.tagline p {
-  font-size: 1rem;
-  text-align: center;
-  padding: 0px 50px;
-  margin: 10px 50px;
-  color:whitesmoke;
-}
-
-.tagline h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding: 0px 50px;
-  margin: 50px;
-  color: whitesmoke;
-}
-
-.project {
+.tagline-text{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: whitesmoke;
-}
-
-.project h1 {
-  font-size: 3rem;
-}
-
-.card-1 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content:space-evenly;
-}
-.card__image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-/* Media Queries for responsiveness */
-@media (max-width: 1024px) {
-  .card-1 {
-    gap: 20px;
-  }
-
-  .card__image {
-    width: 100%;
-  }
 }
 
-@media (max-width: 768px) {
-  .card-1 {
-    gap: 15px;
-  }
-
-  .card__image {
-    width: 100%;
-  }
+.tagline-text span{
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all .5s ease-in-out;
+}
+.tagline-text p {
+  font-size: 1rem;
+  width: 50%;
+ 
 }
 
-@media (max-width: 480px) {
-  .card-1 {
-    gap: 10px;
-  }
-
-  .card__image {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-  }
+.tagline-text h1 {
+  font-size: 5rem;
+  text-align: center;
 }
-/* Responsive styles */
-@media (max-width: 768px) {
-  .tagline p {
-    font-size: 0.9rem;
-    padding: 0px 20px;
-    margin: 20px;
-  }
-
-  .tagline h1 {
-    font-size: 2.5rem;
-    padding: 0px 20px;
-    margin: 20px;
-  }
-
-  .project h1 {
-    font-size: 2.5rem;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 100%;
-    margin: 10px;
-  }
-
-  .card__title {
-    font-size: 18px;
-  }
-
-  .card__description {
-    font-size: 14px;
-  }
-
-  .card__button {
-    padding: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .tagline p {
-    font-size: 0.8rem;
-    padding: 0px 10px;
-    margin: 10px;
-  }
-
-  .tagline h1 {
-    font-size: 1.5rem;
-    padding: 0px 10px;
-  }
-
-  .project h1 {
-    font-size: 2rem;
-  }
-  .card-1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    
-  }
-  .card {
-    width: 100%;
-    max-width: 100%;
-    margin: 10px;
-  }
-
-  .card__title {
-    font-size: 16px;
-  }
-
-  .card__description {
-    font-size: 10px;
-  }
-
-  .card__button {
-    padding: 5px;
-  }
+.tagline-text #g{
+  background: #252525;
+  height: 50px;
+  width: 2px;
 }
 
 
@@ -398,3 +289,19 @@ header .fixed {
 		transform: scale(1);
 	}
 }
+.tagline-container
+  {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }

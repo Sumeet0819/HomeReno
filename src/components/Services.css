@@ -1,0 +1,208 @@
+.services-container{
+    height: 120vh;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.services-container span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.services-container span h1{
+    color: #252525;
+    font-size: 5rem;
+}
+.services-container span p{
+    text-align: center;
+    color: #252525;
+}
+#f{
+  background: #252525;
+  height: 50px;
+  width: 2px;  
+}
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.service .service-box {
+    background-color: #fff;
+    width: 350px;
+    height: 250px;
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.311);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all .5s ease-in-out;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-box:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+                0 24px 46px rgba(60, 60, 60, 0.48);
+      color: #ffff;
+}
+
+.service-box:hover .overlay {
+    transform: scale(8) translateZ(0);
+}
+
+.service-box:hover .circle {
+    border-color: #ffff;
+    background: #ffff;
+}
+
+.service-box:hover .circle:after {
+    background: #ffff;
+
+}
+.service-text{
+  z-index: 6;
+  text-align: center;
+}
+.circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #e26313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+}
+
+.circle img {
+    z-index: 5;
+}
+
+.circle:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    background: #e26313;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    transition: opacity 0.3s ease-out;
+} 
+
+.overlay {
+    width: 80px;
+    position: absolute;
+    height: 80px;
+    border-radius: 50%;
+    background: #e26313;
+    top: 16px;
+    left: 130px;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+}
+
+/* Nth-child selectors for each service-box */
+.service-box:nth-child(1) .circle {
+    border-color: #ff7575;
+}
+
+.service-box:nth-child(2) .circle {
+    border-color: #ffb98b;
+}
+
+.service-box:nth-child(3) .circle {
+    border-color: #f9c663;
+}
+
+.service-box:nth-child(4) .circle {
+    border-color: #27b0c1;
+}
+
+.service-box:nth-child(5) .circle {
+    border-color: #d84178;
+}
+.service-box:nth-child(6) .circle {
+  border-color: #d9eeff;
+}
+.service-box:nth-child(7) .circle {
+  border-color: #8e97db;
+}
+.service-box:nth-child(1) .circle:after {
+    background: #ff7575;
+}
+
+.service-box:nth-child(2) .circle:after {
+    background: #ffb98b;
+}
+
+.service-box:nth-child(3) .circle:after {
+    background: #f9c663;
+}
+
+.service-box:nth-child(4) .circle:after {
+    background: #27b0c1;
+}
+
+.service-box:nth-child(5) .circle:after {
+    background: #d84178;
+}
+.service-box:nth-child(6) .circle:after {
+  background: #d9eeff;
+}
+.service-box:nth-child(7) .circle:after {
+  background: #8e97db;
+}
+.service-box:nth-child(1) .overlay {
+    background: #ff7575;
+}
+
+.service-box:nth-child(2) .overlay {
+    background: #ffb98b;
+}
+
+.service-box:nth-child(3) .overlay {
+    background: #f9c663;
+}
+
+.service-box:nth-child(4) .overlay {
+    background: #27b0c1;
+}
+
+.service-box:nth-child(5) .overlay {
+    background: #d84178;
+}
+.service-box:nth-child(6) .overlay {
+  background: #d9eeff;
+}
+.service-box:nth-child(7) .overlay {
+  background: #8e97db;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  
+.service-box,.services-container span{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+  }

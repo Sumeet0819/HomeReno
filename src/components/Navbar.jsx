@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <header>
       <nav className={`header ${fix ? 'fixed' : ''}`}>
-        <a href="/" className="logo">Your Logo</a>
+        <div className="logo"><a href="/" className="logo">InfiniteHue Decor</a></div>
         <div className={`nav-links ${menuOpen ? 'menu-active' : ''}`}>
           <a href="/">Home</a>
           <a href="/">Our Services</a>

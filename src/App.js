@@ -5,6 +5,7 @@ import Tagline from "./components/Tagline";
 import Projects from "./components/Projects";
 import AboutUs from './components/AboutUs';
 import Testimonials from './components/Testimonials';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <Navbar />
     <Home />
       <Tagline />
+      <Services />
       <Projects/>
       <Testimonials/>
       <AboutUs/>
