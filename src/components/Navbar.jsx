@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [fix, setFix] = useState(false);
@@ -32,7 +33,7 @@ export default function Navbar() {
         <div className={`nav-links ${menuOpen ? 'menu-active' : ''}`}>
           <a href="/">Home</a>
           <a href="/">Our Services</a>
-          <a href="/">Our Projects</a>
+          <Link to="/gallery">Our Projects</Link>
           <a href="/">Cost Calculator</a>
           <a href="/">Contact Us</a>
         </div>

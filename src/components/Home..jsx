@@ -1,6 +1,10 @@
 import React from "react";
 import image from "../images/8.png";
-
+import Tagline from "./Tagline";
+import Services from "./Services";
+import Testimonials from "./Testimonials";
+import Projects from "./Projects";
+import AboutUs from "./AboutUs";
 
 const SplitContainer =() => {
   return (
@@ -25,6 +29,13 @@ const SplitContainer =() => {
         <div className="right-pane">
           <img src={image} alt="" />
         </div>
+      </div>
+      <div>
+          <Tagline />
+          <Services />
+          <Projects/>
+          <Testimonials/>
+          <AboutUs/> 
       </div>
     </>
   );

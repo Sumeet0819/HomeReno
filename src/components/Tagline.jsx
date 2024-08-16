@@ -1,4 +1,5 @@
 import React from 'react'
+import './Tagline.css'
 import Scroll from '../components/Scroll';
 export default function Tagline() {
   return (

@@ -7,7 +7,6 @@ header nav{
   position: fixed;
   z-index:100;
   top:0;
-  padding: 0px 0px 10px 10px ;
   background-color: linear-gradient(to right, #f8b500, #fceabb);
   transition: all 0.5s ease-in-out;
 }
@@ -237,46 +236,6 @@ header .logo{
     width: 100%;
   }
 }
-/* Base styles */
-.tagline-container {
-  background-color: #f2eae3;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  color: #252525;
-}
-.tagline-text{
-  display: flex;
-  width: 100%;
-}
-
-.tagline-text span{
-  display: flex;
-  width: 100%;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-evenly;
-  transition: all .5s ease-in-out;
-}
-.tagline-text p {
-  font-size: 1rem;
-  width: 50%;
- 
-}
-
-.tagline-text h1 {
-  font-size: 5rem;
-  text-align: center;
-}
-.tagline-text #g{
-  background: #252525;
-  height: 50px;
-  width: 2px;
-}
-
 
 @keyframes myAnim {
 	0% {
@@ -289,19 +248,3 @@ header .logo{
 		transform: scale(1);
 	}
 }
-.tagline-container
-  {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 25%;
-  }
-  @keyframes appear {
-    from {
-      opacity: 0;
-      scale: 0.5;
-    }
-    to {
-      opacity: 1;
-      scale: 1;
-    }
-  }

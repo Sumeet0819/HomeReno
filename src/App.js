@@ -1,23 +1,22 @@
 import './App.css';
 import Home from './components/Home.';
 import Navbar from './components/Navbar';
-import Tagline from "./components/Tagline";
-import Projects from "./components/Projects";
-import AboutUs from './components/AboutUs';
-import Testimonials from './components/Testimonials';
-import Services from './components/Services';
+import Gallery from './components/Gallery';
+import {BrowserRouter as Router,Route ,Routes} from 'react-router-dom';
 
 function App() {
   return (
-<>
-    <Navbar />
-    <Home />
-      <Tagline />
-      <Services />
-      <Projects/>
-      <Testimonials/>
-      <AboutUs/>
-      </>
+  
+  <>
+    <Router>
+    <Navbar/>
+      <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/gallery" element={<Gallery/>} />
+      </Routes>
+    </Router>
+  </>
+
   );
 }
 

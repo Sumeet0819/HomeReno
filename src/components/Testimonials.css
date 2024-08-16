@@ -68,3 +68,65 @@
     animation-timeline: view();
     animation-range: entry 0% cover 25%;
   }
+
+  @media (max-width: 1024px) {
+    .content h1 {
+        font-size: 4rem;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .test-1,
+    .test-2 {
+        width: calc(350px * 4);
+    }
+
+    .testimonial {
+        width: 300px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .content h2 {
+        font-size: 1.8rem;
+    }
+
+    .test-1,
+    .test-2 {
+        width: calc(350px * 2);
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 250px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .test-1,
+    .test-2 {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .testimonial {
+        width: 200px;
+        height: 140px;
+    }
+}
