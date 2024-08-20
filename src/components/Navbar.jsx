@@ -32,8 +32,8 @@ export default function Navbar() {
         <div className="logo"><a href="/" className="logo">InfiniteHue Decor</a></div>
         <div className={`nav-links ${menuOpen ? 'menu-active' : ''}`}>
           <a href="/">Home</a>
-          <a href="/">Our Services</a>
-          <Link to="/gallery">Our Projects</Link>
+          <a href="/gallery">Our Gallery</a>
+          <Link to="/">Our Projects</Link>
           <a href="/">Cost Calculator</a>
           <a href="/">Contact Us</a>
         </div>

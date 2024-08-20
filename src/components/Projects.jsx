@@ -19,7 +19,7 @@ export default function Projects() {
             </span>
           </div>
           <div className="project-image">
-               <img  src={require('../images/House (7).jpg')} alt="Card image cap"/>
+               <img  src={require('../images/House (7).jpg')} alt=""/>
           </div>
         </div>
         <div className="details-container">
@@ -31,9 +31,14 @@ export default function Projects() {
             </span>
           </div>
           <div className="project-image">
-               <img  src={require('../images/House (16).jpg')} alt="Card image cap"/>
+               <img  src={require('../images/House (16).jpg')} alt=""/>
           </div>
         </div>
+        <div className="btn-1">
+            <button className="button type1">
+              <span className="btn-txt"><a href="/View-project">View Project</a></span>
+            </button>
+          </div>
         <div className="details-container">
           <div className="project-content">
           <span> 
@@ -43,7 +48,7 @@ export default function Projects() {
             </span>
           </div>
           <div className="project-image">
-               <img  src={require('../images/House (13).jpg')} alt="Card image cap"/>
+               <img  src={require('../images/House (13).jpg')} alt=""/>
           </div>
         </div>
     </div>
