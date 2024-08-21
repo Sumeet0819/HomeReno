@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+  "name": "Kitchen Renovation",
+  "description": "This kitchen renovation features a striking contrast between dark cabinetry and bright white countertops. A large farmhouse sink, brass fixtures, and black appliances add a touch of elegance to the space. The kitchen is illuminated by natural light from a skylight, enhancing the modern design and highlighting the spacious island, which offers ample workspace and seating. The overall aesthetic is sophisticated and contemporary, with clean lines and a functional layout.",
+  "problem": "The original kitchen layout was outdated, cramped, and lacked sufficient storage space. The lighting was inadequate, and the overall aesthetic did not match the homeowner's modern style.",
+  "solution": "The renovation included removing a wall to open up the space, installing custom cabinets with soft-close features, and adding a large island with built-in storage. Modern lighting fixtures were installed, and high-end appliances were integrated seamlessly into the design.",
+  "images": [
+    "../images/House (13).jpg",
+    "../images/House (14).jpg",
+    "../images/House (15).jpg",
+    "../images/House (16).jpg"
+  ],
+  "relatedProjects": ["Bathroom Remodel", "Living Room Update"]
+  },
+  {
+      "id": 2,
+      "name": "Hallway Renovation",
+      "description": "A complete bathroom remodel featuring modern fixtures, a walk-in shower, and a sleek vanity. The design emphasizes clean lines and neutral tones, creating a tranquil and spa-like atmosphere.",
+      "problem": "The old bathroom was cramped, with outdated fixtures and poor lighting. The layout was inefficient, and there was minimal storage space.",
+      "solution": "The remodel involved reconfiguring the layout to maximize space, installing a walk-in shower with frameless glass, and adding custom cabinetry for extra storage. Modern fixtures and lighting were installed to enhance the overall aesthetic.",
+      "images": [
+        "../images/House (13).jpg",
+        "../images/House (14).jpg",
+        "../images/House (15).jpg",
+        "../images/House (16).jpg"
+      ],
+      "relatedProjects": ["Kitchen Renovation", "Living Room Update"]
+    },
+    {
+      "id": 3,
+      "name": "Living Room Update",
+      "description": "A modern living room update with a focus on comfort and style. Featuring new furniture, a fresh coat of paint, and updated lighting to create a cozy yet sophisticated environment.",
+      "problem": "The living room was outdated with mismatched furniture and a dull color scheme. The lighting was insufficient, and the room lacked a cohesive design.",
+      "solution": "The update included selecting a new color palette, purchasing modern furniture, and installing layered lighting to create a warm and inviting atmosphere. Decorative elements were added to tie the room together and enhance its overall aesthetic.",
+      "images": [
+        "../images/House (13).jpg",
+        "../images/House (14).jpg",
+        "../images/House (15).jpg",
+        "../images/House (16).jpg"
+      ],
+      "relatedProjects": ["Kitchen Renovation", "Bathroom Remodel"]
+    }
+]
