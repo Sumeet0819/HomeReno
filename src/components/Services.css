@@ -21,7 +21,7 @@
 #f{
   background: #252525;
   height: 50px;
-  width: 2px;  
+  width: 2px;
 }
 .service {
     display: flex;
@@ -100,7 +100,7 @@
     top: 5px;
     left: 5px;
     transition: opacity 0.3s ease-out;
-} 
+}
 
 .overlay {
     width: 80px;
@@ -201,7 +201,7 @@
       scale: 1;
     }
   }
-  
+
 .service-box,.services-container span{
     animation: appear linear;
     animation-timeline: view();
@@ -212,17 +212,17 @@
     .services-container span h1 {
       font-size: 4rem;
     }
-  
+
     .services-container span p {
       font-size: 0.9rem;
     }
-  
+
     .service .service-box {
       width: 300px;
       height: 220px;
     }
   }
-  
+
   @media (max-width: 768px) {
     .services-container{
         height: 235vh;
@@ -237,28 +237,28 @@
     .services-container span h1 {
       font-size: 3rem;
     }
-  
+
     .services-container span p {
       font-size: 0.8rem;
     }
-  
+
     .service .service-box {
       width: 250px;
       height: 200px;
     }
-  
+
     .circle {
       width: 70px;
       height: 70px;
     }
-  
+
     .circle:after {
       width: 60px;
       height: 60px;
       top: 5px;
       left: 5px;
     }
-  
+
     .overlay {
       width: 60px;
       height: 60px;
@@ -266,9 +266,11 @@
       left: 100px;
     }
   }
-  
+
   @media (max-width: 480px) {
-    
+    .services-container{
+      height: 255vh;
+  }
     .services-container span h1 {
       font-size: 3rem;
     }
@@ -304,7 +306,7 @@
       top: 5px;
       left: 5px;
     }
-  
+
     .overlay {
       width: 50px;
       height: 50px;
@@ -312,4 +314,3 @@
       left: 130px;
     }
   }
-  
