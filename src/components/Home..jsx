@@ -1,23 +1,32 @@
-import React from "react";
+import React , { useRef } from "react";
 import image from "../images/8.png";
 import Tagline from "./Tagline";
 import Services from "./Services";
-import Testimonials from "./Testimonials";
 import Projects from "./Projects";
-import AboutUs from "./AboutUs";
 
-const SplitContainer =() => {
+const SplitContainer = () => {
+
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div className="split-container">
         <div className="left-pane">
           <h1>InfiniteHue Decor</h1>
           <p>
-          "InfiniteHue Decor: Breathing new life into your spaces with boundless creativity and flawless renovation, where every transformation tells a unique story."
+            "InfiniteHue Decor: Breathing new life into your spaces with
+            boundless creativity and flawless renovation, where every
+            transformation tells a unique story."
           </p>
           <div className="btn-1">
             <button className="button type1">
-              <span className="btn-txt">Our Services</span>
+              <span className="btn-txt" onClick={() => scrollToServices()}>Our Services </span>
             </button>
           </div>
           <div className="btn-1">
@@ -31,11 +40,11 @@ const SplitContainer =() => {
         </div>
       </div>
       <div>
-          <Tagline />
-          <Services />
-          <Projects/>
-          <Testimonials/>
-          <AboutUs/> 
+        <Tagline />
+        <div ref={servicesRef} className="services">
+        <Services />
+        </div>
+        <Projects />
       </div>
     </>
   );

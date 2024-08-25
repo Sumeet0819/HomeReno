@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [fix, setFix] = useState(false);
@@ -15,9 +15,9 @@ export default function Navbar() {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', fixed);
+    window.addEventListener("scroll", fixed);
     return () => {
-      window.removeEventListener('scroll', fixed);
+      window.removeEventListener("scroll", fixed);
     };
   }, []);
 
@@ -28,16 +28,23 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className={`header ${fix ? 'fixed' : ''}`}>
-        <div className="logo"><a href="/" className="logo">InfiniteHue Decor</a></div>
-        <div className={`nav-links ${menuOpen ? 'menu-active' : ''}`}>
+      <nav className={`header ${fix ? "fixed" : ""}`}>
+        <div className="logo">
+          <a href="/" className="logo">
+            InfiniteHue Decor
+          </a>
+        </div>
+        <div className={`nav-links ${menuOpen ? "menu-active" : ""}`}>
           <a href="/">Home</a>
           <a href="/gallery">Our Gallery</a>
-          <Link to="/">Our Projects</Link>
+          <Link to="/project">Our Projects</Link>
           <a href="/">Cost Calculator</a>
           <a href="/">Contact Us</a>
         </div>
-        <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+        <div
+          className={`hamburger ${menuOpen ? "active" : ""}`}
+          onClick={toggleMenu}
+        >
           <span></span>
           <span></span>
           <span></span>

@@ -30,6 +30,7 @@ footer {
     position: relative;
     color: #fff;
 }
+
 .sci {
     margin: 20px 0;
     display: flex;
@@ -141,7 +142,8 @@ footer {
         width: 100%;
     }
 
-    .quicklinks, .contactBx {
+    .quicklinks,
+    .contactBx {
         width: 100%;
     }
 }
@@ -167,19 +169,21 @@ footer {
         width: 30px;
     }
 }
+
 @keyframes appear {
     from {
-      opacity: 0%;
-      scale: 0.5;
+        opacity: 0%;
+        scale: 0.5;
     }
+
     to {
-      opacity: 100%;
-      scale: 1;
+        opacity: 100%;
+        scale: 1;
     }
-  }
-  
-.footer-container{
-    animation: appear  linear;
+}
+
+.footer-container {
+    animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 25%;
-  }
+}

@@ -11,6 +11,7 @@
     "../images/House (15).jpg",
     "../images/House (16).jpg"
   ],
+  "bgimage":["url('../images/House (7).jpg')"],
   "relatedProjects": ["Bathroom Remodel", "Living Room Update"]
   },
   {
@@ -25,6 +26,7 @@
         "../images/House (15).jpg",
         "../images/House (16).jpg"
       ],
+      "bgimage":["url('../images/House (16).jpg')"],
       "relatedProjects": ["Kitchen Renovation", "Living Room Update"]
     },
     {
@@ -39,6 +41,7 @@
         "../images/House (15).jpg",
         "../images/House (16).jpg"
       ],
+      "bgimage":["url('../images/House (13).jpg')"],
       "relatedProjects": ["Kitchen Renovation", "Bathroom Remodel"]
     }
 ]

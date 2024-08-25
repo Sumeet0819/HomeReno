@@ -1,0 +1,249 @@
+{
+  "processes": [
+    {
+      "category": "Painting",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Prepare the Area",
+          "description": "Move furniture, cover the floor, and tape edges for clean lines."
+        },
+        {
+          "step": 2,
+          "title": "Prime the Wall",
+          "description": "Apply primer evenly with a roller to help paint adhere and cover any previous stains or colors."
+        },
+        {
+          "step": 3,
+          "title": "Paint the Wall",
+          "description": "Use a brush for edges and corners, then roll paint onto large areas, applying even pressure."
+        },
+        {
+          "step": 4,
+          "title": "Apply Second Coat",
+          "description": "Once dry, add a second coat for a consistent, polished finish, covering any thin spots."
+        },
+        {
+          "step": 5,
+          "title": "Remove Tape",
+          "description": "Carefully peel off painter’s tape before the paint fully dries to reveal sharp, clean edges."
+        },
+        {
+          "step": 6,
+          "title": "Clean Up",
+          "description": "Wash tools, inspect the wall for missed spots, touch up as needed, and return the furniture to its place."
+        }
+      ]
+    },
+    {
+      "category": "Flooring",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Prepare the Subfloor",
+          "description": "Ensure the subfloor is clean, level, and dry before starting."
+        },
+        {
+          "step": 2,
+          "title": "Lay the Underlayment",
+          "description": "Install an underlayment to provide cushioning and reduce noise."
+        },
+        {
+          "step": 3,
+          "title": "Install the Flooring",
+          "description": "Lay the flooring according to manufacturer instructions, ensuring a tight fit and proper alignment."
+        },
+        {
+          "step": 4,
+          "title": "Cut and Fit the Edges",
+          "description": "Trim any excess flooring and fit around corners and obstacles."
+        },
+        {
+          "step": 5,
+          "title": "Secure the Flooring",
+          "description": "Attach the flooring to the subfloor using nails, glue, or a click-lock system as required."
+        },
+        {
+          "step": 6,
+          "title": "Finish the Edges",
+          "description": "Install baseboards or trim to cover the edges of the flooring and complete the look."
+        }
+      ]
+    },
+    {
+      "category": "Roofing",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Inspect the Roof",
+          "description": "Examine the existing roof for damage and necessary repairs."
+        },
+        {
+          "step": 2,
+          "title": "Remove Old Roofing",
+          "description": "Carefully strip away the old roofing material to prepare for the new installation."
+        },
+        {
+          "step": 3,
+          "title": "Repair Roof Deck",
+          "description": "Fix any damaged or rotten sections of the roof deck before installing new materials."
+        },
+        {
+          "step": 4,
+          "title": "Install Underlayment",
+          "description": "Lay down a waterproof underlayment to protect the roof deck from water infiltration."
+        },
+        {
+          "step": 5,
+          "title": "Apply New Roofing Material",
+          "description": "Install the new roofing material, such as shingles or metal panels, according to manufacturer specifications."
+        },
+        {
+          "step": 6,
+          "title": "Inspect and Clean Up",
+          "description": "Inspect the completed roof for any issues and clean up the work area, removing debris and old materials."
+        }
+      ]
+    },
+    {
+      "category": "Carpentry",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Plan and Measure",
+          "description": "Determine the project requirements and take accurate measurements."
+        },
+        {
+          "step": 2,
+          "title": "Select Materials",
+          "description": "Choose appropriate wood or other materials based on the project specifications."
+        },
+        {
+          "step": 3,
+          "title": "Cut and Prepare Materials",
+          "description": "Cut the materials to size and prepare them for assembly."
+        },
+        {
+          "step": 4,
+          "title": "Assemble Components",
+          "description": "Assemble the cut materials into the desired structure or framework."
+        },
+        {
+          "step": 5,
+          "title": "Finish and Install",
+          "description": "Apply any finishes, such as paint or stain, and install the completed carpentry work."
+        },
+        {
+          "step": 6,
+          "title": "Inspect and Adjust",
+          "description": "Check the final work for accuracy and make any necessary adjustments."
+        }
+      ]
+    },
+    {
+      "category": "Interior Design",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Consultation and Planning",
+          "description": "Discuss design goals and plan the layout and style of the interior space."
+        },
+        {
+          "step": 2,
+          "title": "Choose Color Schemes and Materials",
+          "description": "Select colors, fabrics, and materials that align with the design vision."
+        },
+        {
+          "step": 3,
+          "title": "Furniture and Decor Selection",
+          "description": "Choose and arrange furniture and decor items to enhance the functionality and aesthetics of the space."
+        },
+        {
+          "step": 4,
+          "title": "Implement Design",
+          "description": "Execute the design plan by arranging furniture, hanging artwork, and adding finishing touches."
+        },
+        {
+          "step": 5,
+          "title": "Final Review and Adjustments",
+          "description": "Review the completed design and make any necessary adjustments to ensure satisfaction."
+        },
+        {
+          "step": 6,
+          "title": "Client Walkthrough",
+          "description": "Conduct a final walkthrough with the client to ensure all aspects of the design meet expectations."
+        }
+      ]
+    },
+    {
+      "category": "Smart Homes",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Assess Needs and Goals",
+          "description": "Determine the desired smart home features and capabilities."
+        },
+        {
+          "step": 2,
+          "title": "Choose Smart Devices",
+          "description": "Select smart devices and systems that meet the identified needs and goals."
+        },
+        {
+          "step": 3,
+          "title": "Install Devices",
+          "description": "Install smart devices, such as thermostats, lights, and security systems, according to manufacturer instructions."
+        },
+        {
+          "step": 4,
+          "title": "Configure and Connect",
+          "description": "Set up and connect the devices to a central hub or smart home network."
+        },
+        {
+          "step": 5,
+          "title": "Test Functionality",
+          "description": "Test all devices and systems to ensure they function correctly and integrate seamlessly."
+        },
+        {
+          "step": 6,
+          "title": "Provide Training and Support",
+          "description": "Offer training to the homeowner on using the smart home features and provide ongoing support as needed."
+        }
+      ]
+    },
+    {
+      "category": "Structural Repairs",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Assess Damage",
+          "description": "Evaluate the extent of structural damage and determine necessary repairs."
+        },
+        {
+          "step": 2,
+          "title": "Develop Repair Plan",
+          "description": "Create a detailed plan for the repair work, including materials and methods."
+        },
+        {
+          "step": 3,
+          "title": "Prepare the Site",
+          "description": "Prepare the site for repairs by removing damaged materials and setting up necessary supports."
+        },
+        {
+          "step": 4,
+          "title": "Carry Out Repairs",
+          "description": "Perform the repair work, including reinforcing or replacing structural elements."
+        },
+        {
+          "step": 5,
+          "title": "Inspect and Validate",
+          "description": "Inspect the completed repairs to ensure they meet structural standards and safety requirements."
+        },
+        {
+          "step": 6,
+          "title": "Clean Up and Final Review",
+          "description": "Clean up the work area and conduct a final review to ensure all repairs are complete and satisfactory."
+        }
+      ]
+    }
+  ]
+}

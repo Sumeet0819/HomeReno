@@ -1,50 +1,72 @@
-.viewproject-container{
-    height: auto;
+.viewproject-container {
+  margin-top: 50px;
+  height: auto;
 }
-.viewproject{
-    margin: 50px 0px 0px;
-    color: #43372d;
-}
-.project-view{
+
+.project-view {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
 }
-.info{
+
+.info {
   width: 60%;
   margin: 20px;
 }
-.info h1 ,.problem h1, .solution h1, .related-Projects h1{
+
+.info h1 {
+  font-size: 5rem;
+  color: #ffff;
+}
+
+.problem h1,
+.solution h1,
+.related-Projects h1 {
   font-size: 4rem;
   color: #43372d;
 }
-.info p ,.problem p, .solution p{
+
+.info p {
+  line-height: 30px;
+  color: #ffff;
+}
+
+.problem p,
+.solution p {
   line-height: 30px;
   color: #43372d;
   padding: 20px;
 }
-.problem , .solution, .related-Projects{
+
+.problem,
+.solution,
+.related-Projects {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   margin: auto;
 }
-.problem-image,.solution-image{
+
+.problem-image,
+.solution-image {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(180px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
   gap: 20px;
   justify-content: space-evenly;
   margin: 40px;
 }
-.problem-image img, .solution-image img{
+
+.problem-image img,
+.solution-image img {
   width: 100%;
   height: 100%;
 
 }
-.p-image{
+
+.p-image {
   background-color: white;
   padding: 10px;
 }
