@@ -2,36 +2,43 @@
   "processes": [
     {
       "category": "Painting",
-      "steps": [
+      "bgimg":"../images/Painting-bg.png",
+           "steps": [
         {
           "step": 1,
           "title": "Prepare the Area",
-          "description": "Move furniture, cover the floor, and tape edges for clean lines."
+          "description": "Move furniture, cover the floor, and tape edges for clean lines.",
+          "image":"../images/Painting-Masking.png"
         },
         {
           "step": 2,
           "title": "Prime the Wall",
-          "description": "Apply primer evenly with a roller to help paint adhere and cover any previous stains or colors."
+          "description": "Apply primer evenly with a roller to help paint adhere and cover any previous stains or colors.",
+          "image":"../images/Painting-primer.png"
         },
         {
           "step": 3,
           "title": "Paint the Wall",
-          "description": "Use a brush for edges and corners, then roll paint onto large areas, applying even pressure."
+          "description": "Use a brush for edges and corners, then roll paint onto large areas, applying even pressure.",
+          "image":"../images/Painting-color.png"
         },
         {
           "step": 4,
           "title": "Apply Second Coat",
-          "description": "Once dry, add a second coat for a consistent, polished finish, covering any thin spots."
+          "description": "Once dry, add a second coat for a consistent, polished finish, covering any thin spots.",
+          "image":"../images/Painting-secondcoat.png"
         },
         {
           "step": 5,
           "title": "Remove Tape",
-          "description": "Carefully peel off painter’s tape before the paint fully dries to reveal sharp, clean edges."
+          "description": "Carefully peel off painter’s tape before the paint fully dries to reveal sharp, clean edges.",
+          "image":"../images/Painting-remove.png"
         },
         {
           "step": 6,
           "title": "Clean Up",
-          "description": "Wash tools, inspect the wall for missed spots, touch up as needed, and return the furniture to its place."
+          "description": "Wash tools, inspect the wall for missed spots, touch up as needed, and return the furniture to its place.",
+          "image":"../images/Painting-clean.png"
         }
       ]
     },

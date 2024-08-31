@@ -9,7 +9,7 @@ export default function Services() {
   };
 
   return (
-    <div  className="services-container">
+    <div className="services-container">
       <div className="services-header">
         <span>
           <h1>Our Services</h1>
@@ -22,14 +22,8 @@ export default function Services() {
       </div>
       <div className="service">
         <div className="service-box" onClick={() => handleClick("Painting")}>
-          <div className="overlay"></div>
           <div className="circle">
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/stickers/50/roller-brush.png"
-              alt="roller-brush"
-            />
+            <img src="./images/Painting.jpg" alt="roller-brush" />
           </div>
           <div className="service-text ">
             <h1>Painting</h1>
@@ -41,14 +35,8 @@ export default function Services() {
         </div>
         <div className="service-box" onClick={() => handleClick("Flooring")}>
           <div className="circle">
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/stickers/50/wooden-floor.png"
-              alt="wooden-floor"
-            />
+            <img src="./images/Flooring.jpg" alt="roller-brush" />
           </div>
-          <div className="overlay"></div>
           <div className="service-text">
             <h1>Flooring</h1>
             <p>
@@ -57,34 +45,22 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="service-box"onClick={() => handleClick("Roofing")}>
+        <div className="service-box" onClick={() => handleClick("Roofing")}>
           <div className="circle">
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/stickers/50/roofing.png"
-              alt="roofing"
-            />
+            <img src="./images/Repairs.jpg" alt="roller-brush" />
           </div>
-          <div className="overlay"></div>
           <div className="service-text">
-            <h1>Roofing</h1>
+            <h1>Repairs</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               facere ab distin
             </p>
           </div>
         </div>
-        <div className="service-box"onClick={() => handleClick("Carpentry")}>
+        <div className="service-box" onClick={() => handleClick("Carpentry")}>
           <div className="circle">
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/stickers/50/circular-saw.png"
-              alt="circular-saw"
-            />
+            <img src="./images/Carpentry.jpg" alt="roller-brush" />
           </div>
-          <div className="overlay"></div>
           <div className="service-text">
             <h1>Carpentry</h1>
             <p>
@@ -93,54 +69,33 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="service-box"onClick={() => handleClick("Interior Design")}>
+        <div
+          className="service-box"
+          onClick={() => handleClick("Interior Design")}
+        >
           <div className="circle">
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/stickers/50/furniture.png"
-              alt="furniture"
-            />
+            <img src="./images/Kitchen (2).jpg" alt="roller-brush" />
           </div>
-          <div className="overlay"></div>
           <div className="service-text">
-            <h1>Interior Design</h1>
+            <h1>Kitchen</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               facere ab distin
             </p>
           </div>
         </div>
-        <div className="service-box" onClick={() => handleClick("Smart Homes")}>
+        <div
+          className="service-box"
+          onClick={() => handleClick("Structural Repairs")}
+        >
           <div className="circle">
             <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/stickers/50/smart-home-automation.png"
-              alt="smart-home-automation"
+              src="./images/LuxuryBathroom.jpg"
+              alt="roller-brush"
             />
           </div>
-          <div className="overlay"></div>
           <div className="service-text">
-            <h1>Smart Homes</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              facere ab distin
-            </p>
-          </div>
-        </div>
-        <div className="service-box"onClick={() => handleClick("Structural Repairs")}>
-          <div className="circle">
-            <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/stickers/50/maintenance.png"
-              alt="maintenance"
-            />
-          </div>
-          <div className="overlay"></div>
-          <div className="service-text">
-            <h1>Structural Repairs</h1>
+            <h1>Luxury Bathroom</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               facere ab distin

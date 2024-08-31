@@ -1,8 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Project.css";
 import { useNavigate } from "react-router-dom";
 
 export default function Projects() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
 
   const handleClick = (id) => {
@@ -36,7 +39,7 @@ export default function Projects() {
               kitchen's elegant and functional appeal.
             </p>
             <div className="btn-2">
-              <button className="button type1" onClick={() => handleClick(1)}>
+              <button className="btn type2" onClick={() => handleClick(1)}>
                 <span className="btn-txt">View Project</span>
               </button>
             </div>
@@ -60,7 +63,7 @@ export default function Projects() {
               a minimalist and functional aesthetic.
             </p>
             <div className="btn-2">
-              <button className="button type1" onClick={() => handleClick(2)}>
+              <button className="btn type2" onClick={() => handleClick(2)}>
                 <span className="btn-txt">View Project</span>
               </button>
             </div>
@@ -89,7 +92,7 @@ export default function Projects() {
               lines and a functional layout.
             </p>
             <div className="btn-2">
-              <button className="button type1" onClick={() => handleClick(3)}>
+              <button className="btn type2" onClick={() => handleClick(3)}>
                 <span className="btn-txt">View Project</span>
               </button>
             </div>

@@ -1,5 +1,5 @@
 import './App.css';
-import Home from './components/Home.';
+import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Gallery from './components/Gallery';
 import ViewProject from './components/ViewProject'
@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Testimonials from "./components/Testimonials";
 import AboutUs from "./components/AboutUs";
 import Ourservices from "./components/Ourservices";
+import Ready from "./components/Ready";
 function App() {
   return (
 
@@ -21,8 +22,10 @@ function App() {
           <Route path="/View-project/:id" element={<ViewProject/>} />
           <Route path="/our-services/:category" element={<Ourservices/>} />
       </Routes>
+      <Ready/>
       <Testimonials/>
       <AboutUs/>
+
     </Router>
   </>
 

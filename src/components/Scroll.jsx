@@ -1,20 +1,17 @@
 import React from "react";
 import "./Scroll.css";
+import Marquee from "react-fast-marquee";
 
 export default function Scroll() {
   return (
     <>
       <div className="scroll">
         <div
-          className="slider"
-          reverse="true"
-          style={{
-            "--width": "350px",
-            "--height": "420px",
-            "--quantity": 9,
-          }}
-        >
+          className="slider">
+          <Marquee>
+
           <div className="list">
+
             <div className="item" style={{ "--position": 1 }}>
               <img src={require("../images/House (1).jpg")} alt="Error" />
             </div>
@@ -43,6 +40,8 @@ export default function Scroll() {
               <img src={require("../images/House (9).jpg")} alt="Error" />
             </div>
           </div>
+
+          </Marquee>
         </div>
       </div>
     </>

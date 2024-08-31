@@ -1,0 +1,32 @@
+.ready{
+    height: 60vh;
+    color: #fff;
+    background-color: #384042;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ready p{
+    font-size: 1.1rem;
+  }
+  .button-2{
+    height: 52px;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #384042;
+    background:#ffff;
+    opacity: 1;
+    border: none;
+    border-radius: 0;
+  }
+  .content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .content-container h1{
+    font-size: 5rem;
+  }

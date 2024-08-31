@@ -1,12 +1,12 @@
 .tagline-container {
-  background-color: #f2eae3;
+  background-color: #384042;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  color: #252525;
+  color: #ffffff;
 }
 
 .tagline-text {

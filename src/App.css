@@ -7,18 +7,18 @@ header nav{
   position: fixed;
   z-index:100;
   top:0;
-  background-color: linear-gradient(to right, #f8b500, #fceabb);
+  background-color: #384042;
   transition: all 0.5s ease-in-out;
 }
 header a {
   margin-right: 20px;
   text-decoration: none;
-  color: #252525;
+  color: white;
   padding: 20px;
   font-weight: 600;
 }
 header .fixed {
-  background-color: white;
+  background-color: #384042;
   color: #f8b500;
   box-shadow: 0 1px 4px hsl(0 4% 14% /10%);
   transition: .1s ease-in-out;
@@ -35,7 +35,7 @@ header .logo{
 
 .nav-links a {
   text-decoration: none;
-  color: #252525;
+  color: white;
   padding: 10px;
   font-weight: 600;
 }
@@ -51,7 +51,7 @@ header .logo{
 .hamburger span {
   height: 3px;
   width: 25px;
-  background: #252525;
+  background: white;
   margin-bottom: 4px;
   border-radius: 3px;
   transition: 0.3s ease;
@@ -107,29 +107,39 @@ header .logo{
 .split-container {
   display: flex;
   height: 100vh;
+  background-image: url(./images/bg-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-image: fill 0 linear-gradient(#0001,#0000004d);
+
 }
 
 .left-pane, .right-pane {
   flex: 1;
+
 }
 
 .left-pane {
   flex: 5;
   padding: 20px;
-  background-color: #f1cead;
-  border-radius: 120px 120px 120px 120px;
   margin: 50px;
+  align-content: center;
+
+
 }
 .left-pane h1 {
   font-size: 6rem;
   margin-left: 40px;
-  color: #252525;
+  color: #ffffff;
   font-weight: 900;
   margin-top: 60px;
+  font-family: 'Italiana';
 }
 .left-pane p {
   font-size: 1.2rem;
   margin-left: 40px;
+  color: #ffffff;
 }
 .right-pane {
   padding: 20px;
@@ -143,9 +153,6 @@ header .logo{
   transition: all 0.5s ease-in-out;
   perspective: 100px;
   cursor: pointer;
-}
-.right-pane img:hover{
-  transform: translateY(-20px);
 }
 .btn{
   display: flex;
@@ -166,10 +173,10 @@ header .logo{
   position: relative;
   background-color: transparent;
   cursor: pointer;
-  border: 2px solid #252525;
+  border: 2px solid #ffff;
   overflow: hidden;
   border-radius: 5px;
-  color: #333;
+  color: #fff;
   margin-bottom: 30px;
   transition: all 0.5s ease-in-out;
 }

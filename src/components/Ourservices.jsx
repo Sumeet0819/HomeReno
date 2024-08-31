@@ -3,13 +3,14 @@ import { useParams } from "react-router-dom";
 import "./Ourservices.css";
 
 export default function Ourservices() {
+  const [processSteps, setProcessSteps] = useState([]);
+  const [bgimg, setBgimg] = useState(""); // Initialize state for the background image
+
+  const { category } = useParams();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const [processSteps, setProcessSteps] = useState([]);
-
-  const { category } = useParams();
 
   useEffect(() => {
     // Fetch the JSON file
@@ -21,6 +22,7 @@ export default function Ourservices() {
         );
         if (categoryData) {
           setProcessSteps(categoryData.steps);
+          setBgimg(categoryData.bgimg || "");
         }
       })
       .catch((error) => console.error("Error fetching data:", error));
@@ -29,7 +31,15 @@ export default function Ourservices() {
   return (
     <>
       <div className="Our-services">
-        <div className="ourservice-view">
+        <div 
+          className="ourservice-view"        
+          style={{
+            backgroundImage:`url(${bgimg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            borderImage: "fill 0 linear-gradient(#0001,#0000004d)",
+          }}>
           <div className="text">
             <h1>{category}</h1>
             <p>
@@ -56,18 +66,10 @@ export default function Ourservices() {
                 <p>{step.description}</p>
               </div>
               <div className="process-img">
-                <img src="" alt="Loading" />
+                <img src={step.image} alt={step.title} />
               </div>
             </div>
           ))}
-        </div>
-        <div className="ready">
-          <h1>Ready to get started?</h1>
-          <p>
-            Join us today and let our experts help you achieve your goals with
-            tailored solutions that meet your needs.
-          </p>
-          <button className="button-2">Request Estimate</button>
         </div>
       </div>
     </>

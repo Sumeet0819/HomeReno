@@ -38,7 +38,7 @@ export default function ViewProject() {
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            borderImage: "fill 0 linear-gradient(#0001,#000)",
+            borderImage: "fill 0 linear-gradient(#0001,#0000004d)",
           }}
         >
           <div className="info">
