@@ -18,7 +18,7 @@ export default function Ourservices() {
       .then((response) => response.json())
       .then((data) => {
         const categoryData = data.processes.find(
-          (process) => process.category.toLowerCase() === category.toLowerCase()
+          (process) => process.category === category
         );
         if (categoryData) {
           setProcessSteps(categoryData.steps);
