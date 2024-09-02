@@ -39,41 +39,49 @@
           "title": "Clean Up",
           "description": "Wash tools, inspect the wall for missed spots, touch up as needed, and return the furniture to its place.",
           "image":"../images/Painting-clean.png"
+          
         }
       ]
     },
     {
       "category": "Flooring",
+      "bgimg":"../images/Flooring-bg.png",
       "steps": [
         {
           "step": 1,
           "title": "Prepare the Subfloor",
-          "description": "Ensure the subfloor is clean, level, and dry before starting."
+          "description": "Ensure the subfloor is clean, level, and dry before starting.",
+          "image":"../images/Flooring-Prepare the Subfloor.png"
         },
         {
           "step": 2,
           "title": "Lay the Underlayment",
-          "description": "Install an underlayment to provide cushioning and reduce noise."
+          "description": "Install an underlayment to provide cushioning and reduce noise.",
+          "image":"../images/Flooring-Lay the Underlayment.png"
         },
         {
           "step": 3,
           "title": "Install the Flooring",
-          "description": "Lay the flooring according to manufacturer instructions, ensuring a tight fit and proper alignment."
+          "description": "Lay the flooring according to manufacturer instructions, ensuring a tight fit and proper alignment.",
+          "image":"../images/Flooring-Install the Flooring.png"
         },
         {
           "step": 4,
           "title": "Cut and Fit the Edges",
-          "description": "Trim any excess flooring and fit around corners and obstacles."
+          "description": "Trim any excess flooring and fit around corners and obstacles.",
+          "image":"../images/Flooring-Cut and Fit the Edges.png"
         },
         {
           "step": 5,
           "title": "Secure the Flooring",
-          "description": "Attach the flooring to the subfloor using nails, glue, or a click-lock system as required."
+          "description": "Attach the flooring to the subfloor using nails, glue, or a click-lock system as required.",
+          "image":"../images/Flooring-Secure the Flooring.png"
         },
         {
           "step": 6,
           "title": "Finish the Edges",
-          "description": "Install baseboards or trim to cover the edges of the flooring and complete the look."
+          "description": "Install baseboards or trim to cover the edges of the flooring and complete the look.",
+          "image":"../images/Flooring-Finish the Edges.png"
         }
       ]
     },
@@ -114,36 +122,43 @@
     },
     {
       "category": "Carpentry",
+      "bgimg":"../images/Carpentry-bg.png",
       "steps": [
         {
           "step": 1,
           "title": "Plan and Measure",
-          "description": "Determine the project requirements and take accurate measurements."
+          "description": "Determine the project requirements and take accurate measurements.",
+          "image":"../images/Carpentry-Plan and Measure.png"
         },
         {
           "step": 2,
           "title": "Select Materials",
-          "description": "Choose appropriate wood or other materials based on the project specifications."
+          "description": "Choose appropriate wood or other materials based on the project specifications.",
+          "image":"../images/Carpentry-Select Materials.png"
         },
         {
           "step": 3,
           "title": "Cut and Prepare Materials",
-          "description": "Cut the materials to size and prepare them for assembly."
+          "description": "Cut the materials to size and prepare them for assembly.",
+          "image":"../images/Carpentry-Cut and Prepare Materials.png"
         },
         {
           "step": 4,
           "title": "Assemble Components",
-          "description": "Assemble the cut materials into the desired structure or framework."
+          "description": "Assemble the cut materials into the desired structure or framework.",
+          "image":"../images/Carpentry-Assemble Components.png"
         },
         {
           "step": 5,
           "title": "Finish and Install",
-          "description": "Apply any finishes, such as paint or stain, and install the completed carpentry work."
+          "description": "Apply any finishes, such as paint or stain, and install the completed carpentry work.",
+          "image":"../images/Carpentry-Finish and Install.png"
         },
         {
           "step": 6,
           "title": "Inspect and Adjust",
-          "description": "Check the final work for accuracy and make any necessary adjustments."
+          "description": "Check the final work for accuracy and make any necessary adjustments.",
+          "image":"../images/Carpentry-Inspect and Adjust.png"
         }
       ]
     },
