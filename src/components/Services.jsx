@@ -23,7 +23,7 @@ export default function Services() {
       <div className="service">
         <div className="service-box" onClick={() => handleClick("Painting")}>
           <div className="circle">
-            <img src="./images/Painting.jpg" alt="roller-brush" />
+            <img src="./images/Painting.jpg" alt="Error" />
           </div>
           <div className="service-text ">
             <h1>Painting</h1>
@@ -35,7 +35,7 @@ export default function Services() {
         </div>
         <div className="service-box" onClick={() => handleClick("Flooring")}>
           <div className="circle">
-            <img src="./images/Flooring.jpg" alt="roller-brush" />
+            <img src="./images/Flooring.jpg" alt="Error" />
           </div>
           <div className="service-text">
             <h1>Flooring</h1>
@@ -45,9 +45,9 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="service-box" onClick={() => handleClick("Roofing")}>
+        <div className="service-box" onClick={() => handleClick("Repairs")}>
           <div className="circle">
-            <img src="./images/Repairs.jpg" alt="roller-brush" />
+            <img src="./images/Repairs.jpg" alt="Error" />
           </div>
           <div className="service-text">
             <h1>Repairs</h1>
@@ -59,7 +59,7 @@ export default function Services() {
         </div>
         <div className="service-box" onClick={() => handleClick("Carpentry")}>
           <div className="circle">
-            <img src="./images/Carpentry.jpg" alt="roller-brush" />
+            <img src="./images/Carpentry.jpg" alt="Error" />
           </div>
           <div className="service-text">
             <h1>Carpentry</h1>
@@ -71,10 +71,10 @@ export default function Services() {
         </div>
         <div
           className="service-box"
-          onClick={() => handleClick("Interior Design")}
+          onClick={() => handleClick("Kitchen Renovation")}
         >
           <div className="circle">
-            <img src="./images/Kitchen (2).jpg" alt="roller-brush" />
+            <img src="./images/Kitchen (2).jpg" alt="Error" />
           </div>
           <div className="service-text">
             <h1>Kitchen</h1>
@@ -86,12 +86,12 @@ export default function Services() {
         </div>
         <div
           className="service-box"
-          onClick={() => handleClick("Structural Repairs")}
+          onClick={() => handleClick("Luxury Bathroom")}
         >
           <div className="circle">
             <img
               src="./images/LuxuryBathroom.jpg"
-              alt="roller-brush"
+              alt="Error"
             />
           </div>
           <div className="service-text">

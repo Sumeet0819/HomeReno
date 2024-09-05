@@ -12,14 +12,15 @@
 .text {
   width: 1176px;
   font-size: 64px;
-  line-height: 84px;
   padding: 30px;
   font-weight: 700;
   color: rgb(255, 255, 255);
+  text-transform: uppercase;
   }
   .text p{
     font-size: 24px;
     color: #ffff;
+    text-transform: none;
     }
 .button-1 {
   height: 52px;
@@ -96,11 +97,12 @@
   }
   .process-heading{
     display: flex;
-    font-size: 3rem;
+    font-size: 2.5rem;
     align-items: center;
     color: #ffff;
     background-color: #384042;
     padding: 30px;
+    text-transform: uppercase;
   }
 
   .process-heading p{

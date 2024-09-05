@@ -4,8 +4,7 @@ import "./Ourservices.css";
 
 export default function Ourservices() {
   const [processSteps, setProcessSteps] = useState([]);
-  const [bgimg, setBgimg] = useState(""); // Initialize state for the background image
-
+  const [bgimg, setBgimg] = useState("");
   const { category } = useParams();
 
   useEffect(() => {
@@ -13,10 +12,10 @@ export default function Ourservices() {
   }, []);
 
   useEffect(() => {
-    // Fetch the JSON file
-    fetch("/Services.json")
-      .then((response) => response.json())
-      .then((data) => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/Services.json");
+        const data = await response.json();
         const categoryData = data.processes.find(
           (process) => process.category === category
         );
@@ -24,22 +23,26 @@ export default function Ourservices() {
           setProcessSteps(categoryData.steps);
           setBgimg(categoryData.bgimg || "");
         }
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchData();
   }, [category]);
 
   return (
     <>
       <div className="Our-services">
-        <div 
-          className="ourservice-view"        
+        <div
+          className="ourservice-view"
           style={{
-            backgroundImage:`url(${bgimg})`,
+            backgroundImage: `url(${bgimg})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             borderImage: "fill 0 linear-gradient(#0001,#0000004d)",
-          }}>
+          }}
+        >
           <div className="text">
             <h1>{category}</h1>
             <p>

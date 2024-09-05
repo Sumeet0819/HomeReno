@@ -163,109 +163,89 @@
       ]
     },
     {
-      "category": "Interior Design",
+      "category": "Kitchen Renovation",
+      "bgimg":"../images/Kitchen-bg.jpg",
       "steps": [
         {
           "step": 1,
-          "title": "Consultation and Planning",
-          "description": "Discuss design goals and plan the layout and style of the interior space."
+          "title": "Initial Consultation",
+          "description": "Discuss renovation goals, budget, and design preferences with the client.",
+          "image":"../images/Kitchen-Initial Consultation.png"
         },
         {
           "step": 2,
-          "title": "Choose Color Schemes and Materials",
-          "description": "Select colors, fabrics, and materials that align with the design vision."
+          "title": "Design and Layout Planning",
+          "description": "Create a detailed layout plan, including cabinetry, appliances, and overall kitchen flow.",
+          "image":"../images/Kitchen-Design and Layout Planning.png"
         },
         {
           "step": 3,
-          "title": "Furniture and Decor Selection",
-          "description": "Choose and arrange furniture and decor items to enhance the functionality and aesthetics of the space."
+          "title": "Material and Appliance Selection",
+          "description": "Choose cabinetry, countertops, flooring, and appliances based on the design vision and budget.",
+          "image":"../images/Kitchen-Material and Appliance Selection.png"
         },
         {
           "step": 4,
-          "title": "Implement Design",
-          "description": "Execute the design plan by arranging furniture, hanging artwork, and adding finishing touches."
+          "title": "Demolition and Prep Work",
+          "description": "Remove old fixtures, cabinets, and appliances to prepare for the renovation.",
+          "image":"../images/Kitchen-Demolition and Prep Work.png"
         },
         {
           "step": 5,
-          "title": "Final Review and Adjustments",
-          "description": "Review the completed design and make any necessary adjustments to ensure satisfaction."
+          "title": "Installation of Cabinets and Appliances",
+          "description": "Install new cabinetry, countertops, and appliances as per the design plan.",
+          "image":"../images/Kitchen-Installation of Cabinets and Appliances.png"
         },
         {
-          "step": 6,
-          "title": "Client Walkthrough",
-          "description": "Conduct a final walkthrough with the client to ensure all aspects of the design meet expectations."
+          "step": 7,
+          "title": "Final Inspection and Client Walkthrough",
+          "description": "Conduct a thorough inspection and walk through the finished kitchen with the client to ensure satisfaction.",
+          "image":"../images/Kitchen-Final Inspection and Client Walkthrough.png"
         }
       ]
     },
     {
-      "category": "Smart Homes",
+      "category": "Luxury Bathroom",
+      "bgimg":"../images/LuxuryBathroom.jpg",
       "steps": [
         {
           "step": 1,
-          "title": "Assess Needs and Goals",
-          "description": "Determine the desired smart home features and capabilities."
+          "title": "Evaluate Current Bathroom",
+          "description": "Assess the existing bathroom layout, features, and any necessary upgrades.",
+          "image":"../images/Bathroom-1.png"
         },
         {
           "step": 2,
-          "title": "Choose Smart Devices",
-          "description": "Select smart devices and systems that meet the identified needs and goals."
+          "title": "Design and Plan",
+          "description": "Develop a detailed design plan for the luxury bathroom, including fixtures, materials, and layout.",
+          "image":"../images/Bathroom-2.png"
         },
         {
           "step": 3,
-          "title": "Install Devices",
-          "description": "Install smart devices, such as thermostats, lights, and security systems, according to manufacturer instructions."
+          "title": "Prepare the Space",
+          "description": "Clear out the old bathroom fixtures, tiles, and surfaces to prepare for the renovation.",
+          "image":"../images/Bathroom-3.png"
         },
         {
           "step": 4,
-          "title": "Configure and Connect",
-          "description": "Set up and connect the devices to a central hub or smart home network."
+          "title": "Install New Fixtures",
+          "description": "Install high-end fixtures such as bathtubs, showers, sinks, and lighting.",
+          "image":"../images/Bathroom-4.png"
         },
         {
           "step": 5,
-          "title": "Test Functionality",
-          "description": "Test all devices and systems to ensure they function correctly and integrate seamlessly."
+          "title": "Apply Finishing Touches",
+          "description": "Complete the renovation with luxury finishes, such as marble countertops, premium tiles, and elegant fittings.",
+          "image":"../images/Bathroom-5.png"
         },
         {
           "step": 6,
-          "title": "Provide Training and Support",
-          "description": "Offer training to the homeowner on using the smart home features and provide ongoing support as needed."
-        }
-      ]
-    },
-    {
-      "category": "Structural Repairs",
-      "steps": [
-        {
-          "step": 1,
-          "title": "Assess Damage",
-          "description": "Evaluate the extent of structural damage and determine necessary repairs."
-        },
-        {
-          "step": 2,
-          "title": "Develop Repair Plan",
-          "description": "Create a detailed plan for the repair work, including materials and methods."
-        },
-        {
-          "step": 3,
-          "title": "Prepare the Site",
-          "description": "Prepare the site for repairs by removing damaged materials and setting up necessary supports."
-        },
-        {
-          "step": 4,
-          "title": "Carry Out Repairs",
-          "description": "Perform the repair work, including reinforcing or replacing structural elements."
-        },
-        {
-          "step": 5,
-          "title": "Inspect and Validate",
-          "description": "Inspect the completed repairs to ensure they meet structural standards and safety requirements."
-        },
-        {
-          "step": 6,
-          "title": "Clean Up and Final Review",
-          "description": "Clean up the work area and conduct a final review to ensure all repairs are complete and satisfactory."
+          "title": "Final Inspection and Clean-Up",
+          "description": "Inspect the completed renovation to ensure it meets design standards, then clean up the space for final presentation.",
+          "image":"../images/Bathroom-6.png"
         }
       ]
     }
+    
   ]
 }

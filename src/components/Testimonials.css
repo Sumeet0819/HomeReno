@@ -16,13 +16,13 @@
 .content h1 {
     text-align: center;
     font-size: 5rem;
-    color: #252525;
+    color: #da9f86;
 }
 
 .content h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #252525;
+    color: #384042;
 }
 
 .test-1 {
@@ -54,12 +54,14 @@
     transition: all .5s ease-in-out;
 }
 
-.testimonial:hover {
-    background-color: #252525;
+.testimonial:hover{
+    background-color:#384042;
     color: white;
     transform: translateY(-10px);
 }
-
+.testimonial:hover h3 {
+    color: #da9f86;
+}
 .rating {
     margin-bottom: 10px; /* Space between rating and testimonial text */
 }
