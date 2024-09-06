@@ -9,20 +9,21 @@
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-evenly;
+
 }
 
 .project-header span h1 {
-  color: #252525;
+  color: #da9f86;
   font-size: 5rem;
 }
 
 .project-header span p {
   text-align: center;
-  color: #252525;
+  color: #384042;
 }
 
 #p {
-  background: #252525;
+  background: #384042;
   height: 2px;
   width: 150px;
 }
@@ -30,10 +31,16 @@
 .details-container {
   display: flex;
   height: 85vh;
+  background-color: #fff;
+  align-items: center;
   flex-direction: row-reverse;
   justify-content: space-around;
+  transition:all 2s ease-in-out;
+  cursor: pointer;
 }
-
+.details-container:hover h1{
+color: #da9f86;
+}
 .project-content {
   display: flex;
   width: 50%;
@@ -45,13 +52,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
   justify-content: center;
 }
-
+.project-content span h1{
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #384042;
+}
 .project-content span p {
   width: 80%;
   line-height: 30px;
+  color: #384042;
 }
 
 .project-image {
@@ -212,7 +223,7 @@
 }
 
 .btn:hover {
-  box-shadow: 1px 1px 200px #252525;
+  box-shadow: 1px 1px 200px #384042;
   color: #fff;
   border: none;
 }
