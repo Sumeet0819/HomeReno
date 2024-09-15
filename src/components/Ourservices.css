@@ -1,113 +1,169 @@
-.Our-services{
-  margin-top: 50px;
-  height: 400vh;
+.Our-services {
+  height: auto; /* Allow height to adjust based on content */
 }
-.ourservice-view{
+
+.ourservice-view {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh; /* Ensure minimum height to cover viewport */
 }
+
 .text {
-  width: 1176px;
-  font-size: 64px;
+  width: 90%; /* Fluid width */
+  font-size: 4vw; /* Scales based on viewport width */
   padding: 30px;
   font-weight: 700;
-  color: rgb(255, 255, 255);
+  color: #FFF;
   text-transform: uppercase;
-  }
-  .text p{
-    font-size: 24px;
-    color: #ffff;
-    text-transform: none;
-    }
+}
+.text p {
+  font-size: 1.5rem; /* Adjust for responsiveness */
+  color: #FFF;
+  text-transform: none;
+}
+
 .button-1 {
   height: 52px;
   padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Manrope;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 400;
-  color: #FFFFFFFF;
-  background: #565E6DFF;
-  opacity: 1;
+  font-size: 1.2rem; /* Adjust font size */
+  color: #FFF;
+  background: #565E6D;
   border: none;
-  border-radius: 0;
-  }
+  border-radius: 4px; /* Add subtle rounding for modern look */
+}
 
-  .button-1:hover {
-  color: #FFFFFFFF;
-  background: #424956FF;
-  }
-  .button-1:hover:active {
-  color: #FFFFFFFF;
-  background: #323842FF;
-  }
-  .button-1:disabled {
-  opacity: 0.4;
-  }
+.button-1:hover {
+  background: #424956;
+}
+
 .container-service {
   display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
   width: 100%;
-  height: 874px;
-  background: #FFFFFFFF;
+  min-height: auto; /* Adjust height */
+  background: #FFF;
+  padding: 20px;
+}
+
+.process {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr)); /* Flexible for all screen sizes */
+  gap: 10px;
+  width: 100%;
+}
+
+.process-view {
+  display: flex;
+  background-color: #FFF;
+  margin: 10px;
+  padding: 20px;
+  color: #384042;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.process-view h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.process-view:hover h1 {
+  color: #da9f86;
+}
+
+.process-details {
+  width: 90%; /* Responsive width */
+  max-width: 350px;
+}
+
+.process-img {
+  width: 100%; /* Allow the image to scale */
+  max-width: 250px;
+  height: auto;
+  background-color: #CCC;
+}
+
+.process-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.process-heading {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  color: #FFF;
+  background-color: #384042;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.process-heading p {
+  text-align: center;
+  font-size: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .text {
+    font-size: 6vw; /* Adjusts for tablet-sized screens */
   }
-  .process{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, auto));
+  .process-view {
     height: auto;
-    gap: 10px;
   }
-  .process-view{
-    display: flex;
-    flex-direction: row;
-    background-color: #ffff;
-    height: 250px;
-    margin: 20px;
-    padding: 20px;
-    color: #384042;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
+}
 
+@media (max-width: 768px) {
+  .text {
+    font-size: 7vw; /* Increase font size for smaller screens */
   }
-  .process-view h1{
-    text-transform: uppercase;
+  .process-view {
+    flex-direction: column;
+    height: auto;
   }
-  .process-view:hover h1{
-    color: #da9f86;
+  .button-1 {
+    font-size: 1rem; /* Adjust button size */
+    padding: 10px 15px;
   }
-  .process-details{
-    width: 350px;
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 8vw; 
+    padding: 10px;
+  } 
+  .process {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible for all screen sizes */
   }
-  .process-img{
-    background-color: #cccc;
-    width: 250px;
-    height: 250px;
+  .process-view {
+    flex-direction: column;
+    height: auto;
   }
-  .process-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  .process-heading{
-    display: flex;
-    font-size: 2.5rem;
-    align-items: center;
-    color: #ffff;
-    background-color: #384042;
-    padding: 30px;
-    text-transform: uppercase;
+  .process-heading {
+    padding: 10px;
   }
 
+  .process-heading h1{
+    font-size: 1.5rem;
+  }
   .process-heading p{
-    text-align: center;
-    font-size: 1.1rem;
-    width: 90%;
+    font-size: 0.8rem;
+    text-transform: none;
+    text-align: justify;
   }
-  
+  .process-view h1 {
+    font-size: 1.5rem; /* Adjust heading for mobile */
+  }
+  .button-1 {
+    font-size: 0.9rem; /* Smaller button for mobile */
+    padding: 8px 12px;
+  }
+}

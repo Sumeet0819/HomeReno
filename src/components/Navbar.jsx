@@ -36,11 +36,11 @@ export default function Navbar() {
         </div>
         <div className={`nav-links ${menuOpen ? "menu-active" : ""}`}>
           <a href="/">Home</a>
-          <a href="/gallery">Our Gallery</a>
+          <Link to="/gallery">Our Gallery</Link>
           <Link to="/project">Our Projects</Link>
-          <a href="/">Cost Calculator</a>
-          <a href="/">Contact Us</a>
+          <Link to="/contact-us">Contact Us</Link>
         </div>
+        <button className="button-3">Request Estimate</button>
         <div
           className={`hamburger ${menuOpen ? "active" : ""}`}
           onClick={toggleMenu}

@@ -1,15 +1,17 @@
 .project-container {
-  height: auto;
   width: 100%;
   background-color: whitesmoke;
+  padding: 20px 0;
 }
 
 .project-header span {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-evenly;
-
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .project-header span h1 {
@@ -18,34 +20,45 @@
 }
 
 .project-header span p {
-  text-align: center;
   color: #384042;
+  font-size: 1rem;
 }
 
 #p {
   background: #384042;
   height: 2px;
   width: 150px;
+  margin: 20px auto;
 }
 
 .details-container {
   display: flex;
-  height: 85vh;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
   background-color: #fff;
   align-items: center;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  transition:all 2s ease-in-out;
+  justify-content: space-evenly;
+  transition: all 2s ease-in-out;
   cursor: pointer;
 }
-.details-container:hover h1{
-color: #da9f86;
+.details-container:nth-child(even) {
+  flex-direction: row-reverse;
+
 }
+
+.details-container:hover h1 {
+  color: #da9f86;
+}
+
 .project-content {
   display: flex;
-  width: 50%;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
 }
 
 .project-content span {
@@ -54,49 +67,51 @@ color: #da9f86;
   align-items: center;
   justify-content: center;
 }
-.project-content span h1{
+
+.project-content span h1 {
   font-size: 3rem;
-  text-transform: uppercase;
   color: #384042;
 }
+
 .project-content span p {
-  width: 80%;
-  line-height: 30px;
+  width: 100%;
+  max-width: 500px;
+  line-height: 1.6;
   color: #384042;
+  font-size: 1rem;
+  text-align: justify;
 }
 
 .project-image {
   display: flex;
-  width: 450px;
-  height: 450px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
   padding: 15px;
   background-color: #384042;
+  margin: 20px 0;
 }
 
 .project-image img {
   width: 100%;
-  height: 100%;
-}
-
-.details-container:nth-child(odd) {
-  flex-direction: row;
+  height: 500px;
 }
 
 .project-container .details-container,
 .project-container span {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 25%;
+  animation: appear 0.5s ease-in-out;
 }
 
 @keyframes appear {
   from {
     opacity: 0;
-    scale: 0.5;
+    transform: scale(0.5);
   }
   to {
     opacity: 1;
-    scale: 1;
+    transform: scale(1);
   }
 }
 
@@ -104,80 +119,72 @@ color: #da9f86;
   .project-header span h1 {
     font-size: 4rem;
   }
+
   .project-header span p {
     font-size: 0.9rem;
   }
+
   .project-content {
-    width: 60%;
+    width: 80%;
   }
+
   .project-image {
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
   }
 }
 
 @media (max-width: 768px) {
   .project-header span {
     flex-direction: column;
-    gap: 20px;
   }
+
   .project-header span h1 {
     font-size: 3rem;
   }
+
   .project-header span p {
     font-size: 0.8rem;
   }
-  .details-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
   .project-content {
-    width: 80%;
+    width: 90%;
   }
+
   .project-image {
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
   }
 }
 
 @media (max-width: 480px) {
   .project-header span h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
-  .details-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    height: 110vh;
-  }
-  .details-container:nth-child(odd) {
-    flex-direction: column;
-  }
+
   .project-header span p {
     font-size: 1rem;
   }
+
   .project-content {
     width: 100%;
-    margin: 15px;
+    margin: 15px 0;
   }
-  .project-content span p {
-    font-size: 0.5rem;
-    line-height: 20px;
-    margin: 0px 10px;
-  }
-  .project-content span {
-    flex-direction: column;
-  }
+
   .project-content span h1 {
     font-size: 2rem;
+    text-transform: uppercase;
   }
+
+  .project-content span p {
+    font-size: 0.9rem;
+    width: 300px;
+  }
+
   .project-image {
-    width: 320px;
-    height: 350px;
+    max-width: 320px;
   }
+
   #p {
-    height: 30px;
+    width: 100px;
+    height: 2px;
   }
 }
 
@@ -224,7 +231,7 @@ color: #da9f86;
 
 .btn:hover {
   box-shadow: 1px 1px 200px #384042;
-  color: #fff;
+  color: #da9f86;
   border: none;
 }
 

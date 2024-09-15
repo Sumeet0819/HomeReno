@@ -1,32 +1,104 @@
-.ready{
-    height: 60vh;
-    color: #fff;
-    background-color: #384042;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.ready {
+  height: 60vh;
+  color: #fff;
+  background-color: #384042;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Added padding for better spacing */
+  box-sizing: border-box; /* Ensures padding is included in height calculation */
+}
+
+.ready p {
+  font-size: 1.1rem;
+}
+
+.button-2 {
+  height: 52px;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #384042;
+  background: #ffff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  font-family: "Quattrocento Sans", sans-serif; /* Added fallback font */
+}
+
+.button-2:hover {
+  background-color: #da9f86;
+  color: #fff;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.content-container h1 {
+  font-size: 5rem;
+
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .ready {
+    height: 50vh;
   }
-  .ready p{
-    font-size: 1.1rem;
+
+  .content-container h1 {
+    font-size: 4rem;
   }
-  .button-2{
-    height: 52px;
-    padding: 0 20px;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-    color: #384042;
-    background:#ffff;
-    opacity: 1;
-    border: none;
-    border-radius: 0;
+}
+
+@media (max-width: 992px) {
+  .ready {
+    height: 45vh;
   }
-  .content-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+  .content-container h1 {
+    font-size: 3.5rem;
   }
-  .content-container h1{
-    font-size: 5rem;
+
+  .button-2 {
+    font-size: 16px;
+    padding: 0 15px;
   }
+}
+
+@media (max-width: 768px) {
+  .ready {
+    height: 40vh;
+  }
+
+  .content-container h1 {
+    font-size: 3rem;
+  }
+
+  .button-2 {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ready {
+    height: 45vh;
+    padding: 10px; /* Reduced padding for smaller screens */
+  }
+
+  .content-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .button-2 {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+}

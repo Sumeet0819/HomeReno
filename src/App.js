@@ -9,6 +9,7 @@ import Testimonials from "./components/Testimonials";
 import AboutUs from "./components/AboutUs";
 import Ourservices from "./components/Ourservices";
 import Ready from "./components/Ready";
+import ContactUs from './components/ContactUs';
 function App() {
   return (
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/project" element={<Projects/>} />
           <Route path="/View-project/:id" element={<ViewProject/>} />
           <Route path="/our-services/:category" element={<Ourservices/>} />
+          <Route path="/contact-us" element={<ContactUs/>} />
       </Routes>
       <Ready/>
       <Testimonials/>

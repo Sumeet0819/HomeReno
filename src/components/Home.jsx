@@ -35,9 +35,6 @@ const SplitContainer = () => {
             </button>
           </div>
         </div>
-        <div className="right-pane">
-          {/* <img src={image} alt="" /> */}
-        </div>
       </div>
       <div>
         <Tagline />

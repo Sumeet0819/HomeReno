@@ -1,8 +1,6 @@
-.testimonials-contianer {
+.testimonials-container {
     height: auto;
     width: 100%;
-    overflow: hidden;
-
 }
 
 .content {
@@ -17,6 +15,7 @@
     text-align: center;
     font-size: 5rem;
     color: #da9f86;
+    margin: 0; /* Remove default margin */
 }
 
 .content h2 {
@@ -25,19 +24,17 @@
     color: #384042;
 }
 
-.test-1 {
+.test-1, .test-2 {
     display: flex;
-    width: calc(350px *8);
     overflow: hidden;
 }
 
+.test-1 {
+    width: 100%;
+}
+
 .test-2 {
-    display: flex;
     flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-    width: calc(350px *8);
-    overflow: hidden;
 }
 
 .testimonial {
@@ -48,20 +45,20 @@
     margin: 15px;
     border-radius: 5px;
     cursor: pointer;
-    align-self: start;
-    justify-content: center;
     perspective: 100px;
     transition: all .5s ease-in-out;
 }
 
-.testimonial:hover{
-    background-color:#384042;
+.testimonial:hover {
+    background-color: #384042;
     color: white;
     transform: translateY(-10px);
 }
+
 .testimonial:hover h3 {
     color: #da9f86;
 }
+
 .rating {
     margin-bottom: 10px; /* Space between rating and testimonial text */
 }
@@ -74,38 +71,30 @@
 .star:last-child {
     color: #ddd; /* Gray color for unfilled stars */
 }
+
 @keyframes appear {
     from {
         opacity: 0;
-        scale: 0.5;
+        transform: scale(0.5);
     }
-
     to {
         opacity: 1;
-        scale: 1;
+        transform: scale(1);
     }
 }
 
-.testimonials-contianer {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 25%;
+.testimonials-container {
+    animation: appear 1s linear;
 }
 
+/* Responsive styles */
 @media (max-width: 1024px) {
     .content h1 {
         font-size: 4rem;
     }
-
     .content h2 {
         font-size: 2rem;
     }
-
-    .test-1,
-    .test-2 {
-        width: calc(350px * 4);
-    }
-
     .testimonial {
         width: 300px;
         height: 180px;
@@ -116,17 +105,15 @@
     .content h1 {
         font-size: 3rem;
     }
-
+    .test-1 p {
+        font-size: .85em;
+    }
+    .test-2 p {
+        font-size: .85em;
+    }
     .content h2 {
         font-size: 1.8rem;
     }
-
-    .test-1,
-    .test-2 {
-        width: calc(350px * 2);
-        flex-direction: row;
-    }
-
     .testimonial {
         width: 250px;
         height: 160px;
@@ -135,21 +122,14 @@
 
 @media (max-width: 480px) {
     .content h1 {
-        font-size: 2rem;
+        font-size: 3rem;
+        text-transform: uppercase;
     }
-
     .content h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
-
-    .test-1,
-    .test-2 {
-        width: 100%;
-        flex-direction: row;
-    }
-
     .testimonial {
-        width: 200px;
-        height: 140px;
+        width: 240px;
+        height: 170px;
     }
 }

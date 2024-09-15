@@ -1,6 +1,6 @@
 .tagline-container {
   background-color: #384042;
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -35,8 +35,8 @@
 }
 
 .tagline-text #g {
-  background: #252525;
-  height: 50px;
+  background: #ffffff;
+  height: 2px;
   width: 2px;
 }
 
@@ -89,9 +89,11 @@
 
 @media (max-width: 480px) {
   .tagline-text h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
-
+.tagline-container{
+  height: 85vh;
+}
   .tagline-text p {
     font-size: 0.7rem;
     width: 90%;
