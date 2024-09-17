@@ -190,3 +190,58 @@ footer {
     animation-timeline: view();
     animation-range: entry 0% cover 25%;
 }
+
+/* Base Styles */
+.copyright-section {
+    background: #384042;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* White text */
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .copyright-section p {
+    margin: 10px 0;
+  }
+  
+  .copyright-section a {
+    color: #ff9900; /* Highlighted link color */
+    text-decoration: none;
+  }
+  
+  .copyright-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Query for Large Desktops (1200px and above) */
+  @media (min-width: 1200px) {
+    .copyright-section {
+      padding: 25px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Media Query for Medium Desktops and Tablets (768px to 1199px) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .copyright-section {
+      font-size: 14px;
+    }
+  }
+  
+  /* Media Query for Small Tablets and Phones (480px to 767px) */
+  @media (min-width: 480px) and (max-width: 767px) {
+    .copyright-section {
+      padding: 15px;
+      font-size: 13px;
+    }
+  }
+  
+  /* Media Query for Small Phones (less than 480px) */
+  @media (max-width: 479px) {
+    .copyright-section {
+      padding: 10px;
+      font-size: 12px;
+    }
+  }
+  

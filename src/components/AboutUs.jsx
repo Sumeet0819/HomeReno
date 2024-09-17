@@ -8,10 +8,9 @@ export default function AboutUs() {
           <div className="sec aboutus">
             <h2>About Us</h2>
             <p style={{ color: "#fff" }}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Corrupti, obcaecati nam saepe eaque praesentium voluptatem cumque
-              adipisci quisquam explicabo unde qui sint tempore deleniti,
-              possimus magnam nihil laboriosam ipsa quasi!
+              OmLuxe-Brush: Breathing new life into your spaces with boundless
+              creativity and flawless renovation, where every transformation
+              tells a unique story.
             </p>
             <ul className="sci">
               <li>
@@ -40,10 +39,16 @@ export default function AboutUs() {
             <h2>Quick Links</h2>
             <ul>
               <li>
-                <a href="">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="">About</a>
+                <a href="/contact-us">Contact Us</a>
+              </li>
+              <li>
+                <a href="/project">Our Projects</a>
+              </li>
+              <li>
+                <a href="/gallery">Gallery</a>
               </li>
             </ul>
           </div>
@@ -52,7 +57,9 @@ export default function AboutUs() {
             <ul className="info">
               <li>
                 <span>
-                  <i className="bx bxs-phone">+44 07597211128</i>
+                  <i className="bx bxs-phone" style={{ color: "#fff" }}>
+                    +44 07597211128
+                  </i>
                 </span>
               </li>
               <li>
@@ -61,7 +68,7 @@ export default function AboutUs() {
                 </span>
                 <p>
                   <a href="mailto:omluxebrush@gmail.com">
-                  omluxebrush@gmail.com
+                    omluxebrush@gmail.com
                   </a>
                 </p>
               </li>
@@ -69,6 +76,18 @@ export default function AboutUs() {
           </div>
         </div>
       </footer>
+      <div class="copyright-section">
+          <p>&copy; 2024 OmuxeBrush. All rights reserved.</p>
+          <p>Designed and Developed by OmLuxeBrush</p>
+          <p>
+            Unauthorized reproduction, in whole or in part, of any content,
+            images, or designs is prohibited without prior written permission.
+          </p>
+          <p>
+            For inquiries, contact us at{" "}
+            <a href="mailto:contact@omluxebrush.com">contact@omluxebrush.com</a>.
+          </p>
+        </div>
     </>
   );
 }
