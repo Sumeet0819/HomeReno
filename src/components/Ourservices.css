@@ -16,6 +16,8 @@
   padding: 30px;
   font-weight: 700;
   color: #FFF;
+}
+.text h1{
   text-transform: uppercase;
 }
 .text p {
@@ -31,14 +33,17 @@
   align-items: center;
   justify-content: center;
   font-size: 1.2rem; /* Adjust font size */
-  color: #FFF;
-  background: #565E6D;
+  color: #384042;
+  background: #ffff;
   border: none;
+  font-weight: 600;
   border-radius: 4px; /* Add subtle rounding for modern look */
+  cursor: pointer;
 }
 
 .button-1:hover {
-  background: #424956;
+  background: #da9f86;
+  color: #FFF;
 }
 
 .container-service {
@@ -98,14 +103,18 @@
 
 .process-heading {
   display: flex;
+  flex-wrap: wrap;
   font-size: 2rem;
   align-items: center;
   color: #FFF;
   background-color: #384042;
   padding: 20px;
+  justify-content: space-between;
+
+}
+.process-heading h1{
   text-transform: uppercase;
 }
-
 .process-heading p {
   text-align: center;
   font-size: 1rem;
@@ -137,8 +146,9 @@
 
 @media (max-width: 480px) {
   .text {
-    font-size: 8vw; 
+    font-size: 1.7rem; 
     padding: 10px;
+    margin: auto;
   } 
   .process {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible for all screen sizes */

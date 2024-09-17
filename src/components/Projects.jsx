@@ -46,21 +46,16 @@ export default function Projects() {
           </span>
         </div>
         <div className="project-image">
-          <img src={require("../images/House (7).jpg")} alt="Modern Kitchen" />
+          <img src={require("../images/kitchen/kitchen-2.jpg")} alt="Modern Kitchen" />
         </div>
       </div>
       <div className="details-container">
         <div className="project-content">
           <span>
-            <h1>Hallway Renovation</h1>
+            <h1>Interior Renovation</h1>
             <p id="p"></p>
             <p>
-              This hallway renovation showcases a clean and modern look with
-              glossy white floor tiles and a sleek staircase. The space is
-              illuminated by recessed ceiling lights and soft blue LED accent
-              lighting, creating a serene and contemporary ambiance. The design
-              features smooth white walls and built-in storage, contributing to
-              a minimalist and functional aesthetic.
+            This image shows a modern, spacious interior with a sleek, contemporary design. The floor is covered in glossy, light-colored marble or polished tile, reflecting light from the recessed ceiling lights. The ceiling features a unique layered structure with built-in LED lighting, casting a soft purple glow that adds a luxurious and futuristic ambiance to the room. At the center is a minimalist fireplace integrated into the wall, surrounded by a clean, neutral color palette. Large glass doors lead to another area, contributing to the open and airy feel of the space. Overall, the room appears uncluttered and stylish, with a high-end finish and modern lighting accents.
             </p>
             <div className="btn-2">
               <button className="btn type2" onClick={() => handleClick(2)}>
@@ -71,7 +66,7 @@ export default function Projects() {
         </div>
         <div className="project-image">
           <img
-            src={require("../images/House (16).jpg")}
+            src={require("../images/infrastructure/infrastructure-14.jpg")}
             alt="Hallway Renovation"
           />
         </div>
@@ -79,17 +74,10 @@ export default function Projects() {
       <div className="details-container">
         <div className="project-content">
           <span>
-            <h1>Kitchen Renovation</h1>
+            <h1>Luxury-Bathroom</h1>
             <p id="p"></p>
             <p>
-              This kitchen renovation features a striking contrast between dark
-              cabinetry and bright white countertops. A large farmhouse sink,
-              brass fixtures, and black appliances add a touch of elegance to
-              the space. The kitchen is illuminated by natural light from a
-              skylight, enhancing the modern design and highlighting the
-              spacious island, which offers ample workspace and seating. The
-              overall aesthetic is sophisticated and contemporary, with clean
-              lines and a functional layout.
+            The luxury washroom in the image features a sleek, minimalist design with large glass panels surrounding the walk-in shower area. A modern floating toilet is mounted against a marble-textured wall, complemented by a bidet spray. The vanity area showcases a contemporary basin with ample storage below, while natural light flows through the large window, highlighting the marble-effect walls and the polished concrete flooring. The overall aesthetic is clean and sophisticated.
             </p>
             <div className="btn-2">
               <button className="btn type2" onClick={() => handleClick(3)}>
@@ -100,7 +88,7 @@ export default function Projects() {
         </div>
         <div className="project-image">
           <img
-            src={require("../images/House (13).jpg")}
+            src={require("../images/luxuryWashroom/luxuryWashroom-3.jpg")}
             alt="Kitchen Renovation"
           />
         </div>

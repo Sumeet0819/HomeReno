@@ -1,12 +1,12 @@
 .tagline-container {
-  background-color: #384042;
+  background-color: #fff;
   height: 110vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  color: #ffffff;
+  color: #da9f86;
 }
 
 .tagline-text {
@@ -26,6 +26,7 @@
 .tagline-text p {
   font-size: 1rem;
   width: 50%;
+  color: #384042;
 
 }
 
@@ -35,9 +36,9 @@
 }
 
 .tagline-text #g {
-  background: #ffffff;
+  background: #da9f86;
   height: 2px;
-  width: 2px;
+  width: 200px;
 }
 
 .tagline-container {
@@ -82,9 +83,6 @@
     flex-direction: column;
   }
 
-  .tagline-text #g {
-    height: 40px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -99,7 +97,4 @@
     width: 90%;
   }
 
-  .tagline-text #g {
-    height: 30px;
-  }
 }

@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./viewproject.css";
 
 export default function ViewProject() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const [project, setProject] = useState(null);
+  const [relatedProjects, setRelatedProjects] = useState([]);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const { id } = useParams();
-  const [project, setProject] = useState(null);
 
   useEffect(() => {
     // Fetch data from the JSON file
@@ -19,6 +21,14 @@ export default function ViewProject() {
       // Find the project with the matching id
       const projectData = data.find((project) => project.id === parseInt(id));
       setProject(projectData);
+
+      // Fetch related projects
+      if (projectData) {
+        const relatedProjectsData = data.filter((proj) =>
+          projectData.relatedProjects.includes(proj.name)
+        );
+        setRelatedProjects(relatedProjectsData);
+      }
     };
 
     fetchData();
@@ -27,6 +37,12 @@ export default function ViewProject() {
   if (!project) {
     return <div>Loading...</div>;
   }
+
+  const handleNavigate = (relatedProjectId) => {
+    // Navigate to the project page with the related project ID
+    navigate(`/view-project/${relatedProjectId}`);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <>
@@ -46,65 +62,65 @@ export default function ViewProject() {
             <p>{project.description}</p>
           </div>
         </div>
+
         <div className="problem">
-          <h1>The Problem</h1>
-          <p>{project.problem}</p>
+          {/* <h1>The Problem</h1> */}
+          {/* <p>{project.problem}</p> */}
           <div className="problem-image">
             <div className="p-image">
-              <img src={project.images[1]} alt="" />
+              <img src={project.images[1]} alt="Problem" />
             </div>
             <div className="p-image">
-              <img src={project.images[2]} alt="" />
-            </div>
-            <div className="p-image">
-              <img src={project.images[3]} alt="" />
-            </div>
-            <div className="p-image">
-              <img src={project.images[0]} alt="" />
+              <img src={project.images[0]} alt="Problem" />
             </div>
           </div>
         </div>
+
         <div className="solution">
-          <h1>The Solution</h1>
+          {/* <h1>The Solution</h1> */}
           <p>{project.solution}</p>
-          <div className="solution-image">
+          {/* <div className="solution-image">
             <div className="p-image">
-              <img src={project.images[0]} alt="" />
+              <img src={project.images[0]} alt="Solution" />
             </div>
             <div className="p-image">
-              <img src={project.images[1]} alt="" />
+              <img src={project.images[1]} alt="Solution" />
             </div>
-            <div className="p-image">
-              <img src={project.images[2]} alt="" />
-            </div>
-            <div className="p-image">
-              <img src={project.images[3]} alt="" />
-            </div>
-          </div>
+          </div> */}
         </div>
+
+        {/* Related Projects Section */}
         <div className="related-Projects">
-          <h1>Related Projects</h1>
-        </div>
-        <div className="details-container">
-          <div className="project-content">
-            <span>
-              <h1>{project.relatedProjects[1]}</h1>
-              <p id="p"></p>
-              <p>
-                This kitchen renovation features a striking contrast between
-                dark cabinetry and bright white countertops. A large farmhouse
-                sink, brass fixtures, and black appliances add a touch of
-                elegance to the space. The kitchen is illuminated by natural
-                light from a skylight, enhancing the modern design and
-                highlighting the spacious island, which offers ample workspace
-                and seating. The overall aesthetic is sophisticated and
-                contemporary, with clean lines and a functional layout.
-              </p>
-            </span>
-          </div>
-          <div className="project-image">
-            <img src={require("../images/House (13).jpg")} alt="" />
-          </div>
+          <span>
+            <h1>Related Projects</h1>
+          </span>
+          {relatedProjects.length > 0 ? (
+            relatedProjects.map((relatedProject) => (
+              <div key={relatedProject.id} className="details-container">
+                <div className="project-content">
+                  <h1>{relatedProject.name}</h1>
+                  <span>
+                    <p>{relatedProject.description}</p>
+                  </span>
+
+                  <button
+                    className="btn type2"
+                    onClick={() => handleNavigate(relatedProject.id)}
+                  >
+                    <span className="btn-txt">View Project</span>
+                  </button>
+                </div>
+                <div className="project-image">
+                  <img
+                    src={relatedProject.images[0]}
+                    alt={relatedProject.name}
+                  />
+                </div>
+              </div>
+            ))
+          ) : (
+            <p>No related projects found.</p>
+          )}
         </div>
       </div>
     </>

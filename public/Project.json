@@ -3,45 +3,36 @@
     "id": 1,
   "name": "Kitchen Renovation",
   "description": "This kitchen renovation features a striking contrast between dark cabinetry and bright white countertops. A large farmhouse sink, brass fixtures, and black appliances add a touch of elegance to the space. The kitchen is illuminated by natural light from a skylight, enhancing the modern design and highlighting the spacious island, which offers ample workspace and seating. The overall aesthetic is sophisticated and contemporary, with clean lines and a functional layout.",
-  "problem": "The original kitchen layout was outdated, cramped, and lacked sufficient storage space. The lighting was inadequate, and the overall aesthetic did not match the homeowner's modern style.",
-  "solution": "The renovation included removing a wall to open up the space, installing custom cabinets with soft-close features, and adding a large island with built-in storage. Modern lighting fixtures were installed, and high-end appliances were integrated seamlessly into the design.",
+  "solution": "The image showcases a modern kitchen with a sleek and minimalist design, featuring clean lines and high-end finishes. The countertops are made of a glossy black material, contrasting elegantly with the white cabinetry. On the left side of the kitchen, a large window floods the space with natural light, offering a view of the outside, including a garage and lush greenery. A stylish sink with a modern faucet is embedded in the countertop near the window. The cabinetry along the walls is composed of glossy white panels with metallic accents, providing a clean and seamless look. On the right, a reflective bronze or gold backsplash adds a touch of luxury to the space, complementing the built-in appliances and stovetop. The design is cohesive, with the long black countertops and sleek cabinetry creating a sense of spaciousness and functionality. The overall atmosphere is contemporary, with a focus on minimalism and elegance.",
   "images": [
-    "../images/House (13).jpg",
-    "../images/House (14).jpg",
-    "../images/House (15).jpg",
-    "../images/House (16).jpg"
+    "../images/kitchen/kitchen-1.jpg",
+    "../images/kitchen/kitchen-2.jpg"
   ],
-  "bgimage":["url('../images/House (7).jpg')"],
-  "relatedProjects": ["Bathroom Remodel", "Living Room Update"]
+  "bgimage":["url('../images/kitchen/kitchen-2.jpg')"],
+  "relatedProjects": ["Interior Renovation", "Luxury-Bathroom"]
   },
   {
       "id": 2,
-      "name": "Hallway Renovation",
-      "description": "A complete bathroom remodel featuring modern fixtures, a walk-in shower, and a sleek vanity. The design emphasizes clean lines and neutral tones, creating a tranquil and spa-like atmosphere.",
-      "problem": "The old bathroom was cramped, with outdated fixtures and poor lighting. The layout was inefficient, and there was minimal storage space.",
-      "solution": "The remodel involved reconfiguring the layout to maximize space, installing a walk-in shower with frameless glass, and adding custom cabinetry for extra storage. Modern fixtures and lighting were installed to enhance the overall aesthetic.",
+      "name": "Interior Renovation",
+      "description": "This image shows a modern, spacious interior with a sleek, contemporary design. The floor is covered in glossy, light-colored marble or polished tile, reflecting light from the recessed ceiling lights. The ceiling features a unique layered structure with built-in LED lighting, casting a soft purple glow that adds a luxurious and futuristic ambiance to the room. At the center is a minimalist fireplace integrated into the wall, surrounded by a clean, neutral color palette. Large glass doors lead to another area, contributing to the open and airy feel of the space. Overall, the room appears uncluttered and stylish, with a high-end finish and modern lighting accents.",
+      "solution": "The two images depict a modern, spacious, and open-plan interior under construction or renovation. The left image shows a large kitchen and living area with glossy white floors, sleek cabinetry, and a large kitchen island. There is a ladder and some boxes on the floor, indicating ongoing work. Blue LED lighting accents the ceiling, giving the space a contemporary and stylish look. The right image focuses on a built-in entertainment wall with recessed shelving and electrical outlets, set against a large sliding glass door that opens up to a backyard, allowing natural light to flood the room. The space appears to be almost complete, with finishing touches being made.",
       "images": [
-        "../images/House (13).jpg",
-        "../images/House (14).jpg",
-        "../images/House (15).jpg",
-        "../images/House (16).jpg"
+        "../images/infrastructure/infrastructure-10.jpg",
+        "../images/infrastructure/infrastructure-12.jpg"
       ],
-      "bgimage":["url('../images/House (16).jpg')"],
-      "relatedProjects": ["Kitchen Renovation", "Living Room Update"]
+      "bgimage":["url('../images/infrastructure/infrastructure-14.jpg')"],
+      "relatedProjects": ["Luxury-Bathroom", "Kitchen Renovation"]
     },
     {
       "id": 3,
-      "name": "Living Room Update",
-      "description": "A modern living room update with a focus on comfort and style. Featuring new furniture, a fresh coat of paint, and updated lighting to create a cozy yet sophisticated environment.",
-      "problem": "The living room was outdated with mismatched furniture and a dull color scheme. The lighting was insufficient, and the room lacked a cohesive design.",
-      "solution": "The update included selecting a new color palette, purchasing modern furniture, and installing layered lighting to create a warm and inviting atmosphere. Decorative elements were added to tie the room together and enhance its overall aesthetic.",
+      "name": "Luxury-Bathroom",
+      "description": "The luxury washroom in the image features a sleek, minimalist design with large glass panels surrounding the walk-in shower area. A modern floating toilet is mounted against a marble-textured wall, complemented by a bidet spray. The vanity area showcases a contemporary basin with ample storage below, while natural light flows through the large window, highlighting the marble-effect walls and the polished concrete flooring. The overall aesthetic is clean and sophisticated.",
+      "solution": "The two images depict a sleek, modern bathroom with a minimalistic design. Both images showcase a clean and bright space featuring white marble walls with subtle veining. The left image shows a floating sink vanity with a wide mirror above it, next to a window allowing natural light to illuminate the room. A wall-mounted toilet with a bidet hose sits beside the vanity. The right image focuses on a glass-enclosed walk-in shower with a rainfall showerhead and a towel rack mounted above it. The consistent use of large windows gives the bathroom an open, airy feel.",
       "images": [
-        "../images/House (13).jpg",
-        "../images/House (14).jpg",
-        "../images/House (15).jpg",
-        "../images/House (16).jpg"
+        "../images/luxuryWashroom/luxuryWashroom-2.jpg",
+        "../images/luxuryWashroom/luxuryWashroom-1.jpg"
       ],
-      "bgimage":["url('../images/House (13).jpg')"],
-      "relatedProjects": ["Kitchen Renovation", "Bathroom Remodel"]
+      "bgimage":["url('../images/luxuryWashroom/luxuryWashroom-3.jpg')"],
+      "relatedProjects": ["Interior Renovation", "Kitchen Renovation"]
     }
 ]

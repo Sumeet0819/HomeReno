@@ -57,7 +57,7 @@ footer {
 }
 
 .sci li a:hover {
-    background: #f8b500;
+    background: #da9f86;
 }
 
 .sci i a .bx {
@@ -101,6 +101,7 @@ footer {
     display: flex !important;
     margin-bottom: 16px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .contactBx .info li span:nth-child(1) {
@@ -111,12 +112,14 @@ footer {
 
 .contactBx .info li span {
     color: #999;
+    padding: 10px;
 }
 
 .contactBx .info li a {
     color: #999;
     text-decoration: none;
     transition: 0.5s;
+    padding: 10px;
 }
 
 .contactBx .info li a:hover {

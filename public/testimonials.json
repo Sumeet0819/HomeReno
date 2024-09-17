@@ -6,7 +6,7 @@
   },
   {
       "name": "John Smith",
-      "rating": 5,
+      "rating": 4,
       "testimonial": "Exceptional service! The team was very responsive and delivered high-quality work ahead of schedule. I'm thoroughly impressed and will definitely use their services again."
   },
   {
@@ -16,7 +16,7 @@
   },
   {
       "name": "Michael Brown",
-      "rating": 4.8,
+      "rating": 4,
       "testimonial": "Outstanding job! The quality of work was top-notch, and the team was very professional throughout the process. I would highly recommend them to others."
   },
   {
@@ -31,7 +31,7 @@
   },
   {
       "name": "Alex Martinez",
-      "rating": 4.7,
+      "rating": 4,
       "testimonial": "Highly satisfied with the service. The quality of work was impressive, and the team was very professional. Will definitely consider them for future projects."
   },
   {

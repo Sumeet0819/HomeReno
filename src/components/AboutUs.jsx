@@ -52,12 +52,7 @@ export default function AboutUs() {
             <ul className="info">
               <li>
                 <span>
-                  <i className="bx bxs-map"></i>
-                </span>
-                <span>
-                  6444 London street <br />
-                  Brighton PA33445 <br />
-                  UK
+                  <i className="bx bxs-phone">+44 07597211128</i>
                 </span>
               </li>
               <li>
@@ -65,8 +60,8 @@ export default function AboutUs() {
                   <i className="bx bx-envelope"></i>
                 </span>
                 <p>
-                  <a href="mailto:codehobby9@gmail.com">
-                    Codemyhobby9@gmail.com
+                  <a href="mailto:omluxebrush@gmail.com">
+                  omluxebrush@gmail.com
                   </a>
                 </p>
               </li>

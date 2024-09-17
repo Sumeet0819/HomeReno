@@ -41,6 +41,7 @@
   justify-content: space-evenly;
   transition: all 2s ease-in-out;
   cursor: pointer;
+
 }
 .details-container:nth-child(even) {
   flex-direction: row-reverse;
@@ -71,6 +72,7 @@
 .project-content span h1 {
   font-size: 3rem;
   color: #384042;
+  text-transform: uppercase;
 }
 
 .project-content span p {
@@ -155,6 +157,9 @@
 }
 
 @media (max-width: 480px) {
+  .project-container{
+    margin-top: 50px;
+  }
   .project-header span h1 {
     font-size: 2.5rem;
   }

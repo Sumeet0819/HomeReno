@@ -1,71 +1,238 @@
+/* General responsive layout adjustments */
 .viewproject-container {
   height: auto;
 }
 
+/* Make project-view container flexible on smaller screens */
 .project-view {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   width: 100%;
   height: 100vh;
 }
 
+/* Info section responsive typography */
 .info {
-  width: 60%;
-  margin: 20px;
+  width: 80%;
+  margin: 40px;
+
 }
 
 .info h1 {
-  font-size: 5rem;
-  color: #ffff;
-}
-
-.problem h1,
-.solution h1,
-.related-Projects h1 {
   font-size: 4rem;
-  color: #43372d;
+  color: #ffffff;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .info p {
-  line-height: 30px;
-  color: #ffff;
+  line-height: 1.6rem;
+  color: #ffffff;
+  padding: 10px;
+  text-align: left;
 }
 
-.problem p,
+/* Responsive typography for problem, solution, and related-projects sections */
+.related-Projects span h1{
+  font-size: 2.5rem;
+  color: #384042;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin: 50px ;
+}
+.related-Projects span h1:before,
+.related-Projects span h1:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 300px; /* Adjust line width as needed */
+  height: 2px;  /* Line thickness */
+  background-color: #384042;
+}
+
+.related-Projects span h1:before {
+  left: -520px; /* Adjust distance from the heading */
+}
+
+.related-Projects span h1:after {
+  right: -520px; /* Adjust distance from the heading */
+}
+.project-content h1{
+  color: #384042;
+  text-transform: uppercase;
+}
+
 .solution p {
-  line-height: 30px;
-  color: #43372d;
-  padding: 20px;
+  line-height: 1.6rem;
+  color: #384042;
+  padding: 10px;
+  text-align: center;
 }
 
+/* Make problem, solution, related-projects sections more flexible */
 .problem,
 .solution,
 .related-Projects {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin: auto;
+  width: 100%;
+  margin: 20px auto;
 }
-
+/* Make image grids responsive */
 .problem-image,
 .solution-image {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
-  gap: 20px;
-  justify-content: space-evenly;
-  margin: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  margin: 20px;
 }
 
 .problem-image img,
 .solution-image img {
   width: 100%;
   height: 100%;
-
 }
 
 .p-image {
-  background-color:#384042;
+  background-color: #384042;
   padding: 10px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .info h1 {
+    font-size: 4rem;
+  }
+
+  .problem h1,
+  .solution h1,
+  .related-Projects h1 {
+    font-size: 3.5rem;
+  }
+
+  .info p,
+  .problem p,
+  .solution p {
+    line-height: 1.8rem;
+  }
+
+  .problem-image,
+  .solution-image {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin: 40px;
+  }
+}
+
+/* Media query for small mobile screens */
+@media (max-width: 480px) {
+  .info h1 {
+    font-size: 2.5rem;
+  }
+
+  .problem h1,
+  .solution h1,
+  .related-Projects h1 {
+    font-size: 2rem;
+  }
+
+  .problem-image,
+  .solution-image {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+}
+
+/* Responsive typography for problem, solution, and related-projects sections */
+.related-Projects span h1 {
+  font-size: 2.5rem;
+  color: #384042;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin: 50px;
+}
+
+.related-Projects span h1:before,
+.related-Projects span h1:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%; /* Use percentage for responsive width */
+  height: 2px;  /* Line thickness */
+  background-color: #384042;
+}
+
+.related-Projects span h1:before {
+  left: -35%; /* Adjust percentage for left side */
+}
+
+.related-Projects span h1:after {
+  right: -35%; /* Adjust percentage for right side */
+}
+
+/* Adjust typography and line widths for smaller screens */
+@media (max-width: 1024px) {
+  .related-Projects span h1 {
+    font-size: 2rem;
+  }
+
+  .related-Projects span h1:before,
+  .related-Projects span h1:after {
+    width: 25%; /* Adjust line width for smaller screens */
+  }
+
+  .related-Projects span h1:before {
+    left: -30%;
+  }
+
+  .related-Projects span h1:after {
+    right: -30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .related-Projects span h1 {
+    font-size: 1.8rem;
+  }
+
+  .related-Projects span h1:before,
+  .related-Projects span h1:after {
+    width: 20%; /* Adjust line width for smaller tablets */
+  }
+
+  .related-Projects span h1:before {
+    left: -25%;
+  }
+
+  .related-Projects span h1:after {
+    right: -25%;
+  }
+}
+
+@media (max-width: 480px) {
+  .related-Projects span h1 {
+    font-size: 1.5rem;
+  }
+
+  .related-Projects span h1:before,
+  .related-Projects span h1:after {
+    width: 15%; /* Adjust line width for mobile */
+  }
+
+  .related-Projects span h1:before {
+    left: -20%;
+  }
+
+  .related-Projects span h1:after {
+    right: -20%;
+  }
 }
