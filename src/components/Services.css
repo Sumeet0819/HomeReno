@@ -60,7 +60,6 @@
 .service-box:hover h1 {
   color: #da9f86;
 }
-
 .service-text {
   position: absolute;
   background-color: #fff;
@@ -69,17 +68,19 @@
   left: 40px;
   right: 0;
   width: 100%;
-  height: 175px;
+  height: 180px;
   padding: 10px;
 }
 
 .service-text h1 {
   font-size: 2.4rem;
   text-transform: uppercase;
+
 }
 
 .service-text p {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .circle {

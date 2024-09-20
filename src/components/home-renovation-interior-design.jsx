@@ -3,6 +3,8 @@ import React , { useRef } from "react";
 import Tagline from "./Tagline";
 import Services from "./Services";
 import Projects from "./Projects";
+import RequestEstimateButton from "./RequestEstimateButton";
+
 
 const SplitContainer = () => {
 
@@ -25,15 +27,11 @@ const SplitContainer = () => {
             transformation tells a unique story."
           </p>
           <div className="btn-1">
-            <button className="button type1">
+            <button className="button-2">
               <span className="btn-txt" onClick={() => scrollToServices()}>Our Services </span>
             </button>
           </div>
-          <div className="btn-1">
-            <button className="button type1">
-              <span className="btn-txt">Request Estimate</span>
-            </button>
-          </div>
+          <RequestEstimateButton/>
         </div>
       </div>
       <div>

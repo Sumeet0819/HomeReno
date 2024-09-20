@@ -31,9 +31,9 @@ export default function Navbar() {
     <header>
       <nav className={`header ${fix ? "fixed" : ""}`}>
         <div className="logo">
-          <a href="/" className="logo">
-          OmLuxe-Brush
-          </a>
+        <a href="/" className="logo">
+  <img src="./images/logo.png" alt="OmLuxe-Brush Logo" className="logo-image"/>OmLuxe-Brush
+</a>
         </div>
         <div className={`nav-links ${menuOpen ? "menu-active" : ""}`}>
           <a href="/">Home</a>
@@ -41,7 +41,6 @@ export default function Navbar() {
           <Link to="/project">Our Projects</Link>
           <Link to="/contact-us">Contact Us</Link>
         </div>
-        <button className="button-3">Request Estimate</button>
         <div
           className={`hamburger ${menuOpen ? "active" : ""}`}
           onClick={toggleMenu}

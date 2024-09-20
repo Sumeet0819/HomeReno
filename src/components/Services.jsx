@@ -28,8 +28,7 @@ export default function Services() {
           <div className="service-text ">
             <h1>Painting</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              facere ab distin
+            "Painting services start from 650 per room. Prices may vary based on room size and requirements."
             </p>
           </div>
         </div>
@@ -40,8 +39,7 @@ export default function Services() {
           <div className="service-text">
             <h1>Flooring</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              facere ab distin
+            "Building solid foundations with every step. Ensuring quality and precision in every project."
             </p>
           </div>
         </div>
@@ -52,8 +50,7 @@ export default function Services() {
           <div className="service-text">
             <h1>Repairs</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              facere ab distin
+            "Restoring strength, reviving spaces. Elevating the essence of every environment."
             </p>
           </div>
         </div>
@@ -64,8 +61,7 @@ export default function Services() {
           <div className="service-text">
             <h1>Carpentry</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              facere ab distin
+            "Crafting excellence, shaping your vision. Delivering unmatched quality, one project at a time."
             </p>
           </div>
         </div>
@@ -79,8 +75,7 @@ export default function Services() {
           <div className="service-text">
             <h1>Kitchen</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              facere ab distin
+            "Revitalize your heart of the home with style and function. Redefining your living space with a touch of sophistication."
             </p>
           </div>
         </div>
@@ -97,8 +92,7 @@ export default function Services() {
           <div className="service-text">
             <h1>Luxury Bathroom</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              facere ab distin
+            "Indulge in elegance, redefine your sanctuary. Transforming spaces into serene, luxurious retreats."
             </p>
           </div>
         </div>

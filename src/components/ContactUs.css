@@ -131,7 +131,7 @@ h2 {
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .container-us {
-    margin: 10px 20px;
+    margin: 50px 20px;
     padding: 15px;
   }
 
@@ -146,7 +146,7 @@ h2 {
 
 @media (max-width: 768px) {
   .container-us {
-    margin: 10px 10px;
+    margin: 50px 10px;
     padding: 10px;
   }
 
@@ -174,7 +174,7 @@ h2 {
 
 @media (max-width: 480px) {
   .container-us {
-    margin: 10px;
+    margin-top: 50px;
     padding: 5px;
   }
 

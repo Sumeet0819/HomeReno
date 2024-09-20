@@ -3,12 +3,13 @@
     {
       "category": "Painting",
       "bgimg":"../images/Painting-bg.png",
-           "steps": [
+       "info":"The house painting process begins with thorough surface preparation, ensuring all areas are cleaned, repaired, and smoothed to create a solid base for the paint. This is followed by the application of a primer, which helps the paint adhere better and enhances its longevity. Once the surface is primed, the actual painting begins, typically requiring two coats to achieve even, rich coverage. The right tools—whether brushes, rollers, or sprayers—ensure a smooth application. After the paint dries, any touch-ups are done to perfect the finish. Finally, the area is cleaned, leaving behind a fresh, vibrant new look.",
+       "steps": [
         {
           "step": 1,
           "title": "Prepare the Area",
           "description": "Move furniture, cover the floor, and tape edges for clean lines.",
-          "image":"../images/Painting-masking.png"
+          "image":"../images/Painting-masking.png"        
         },
         {
           "step": 2,
@@ -46,6 +47,7 @@
     {
       "category": "Flooring",
       "bgimg":"../images/Flooring-bg.png",
+      "info":"The flooring process involves several key steps to ensure a durable and attractive finish. First, the existing floor is prepared by cleaning and leveling the surface. Next, a subfloor may be installed to provide additional support. The chosen flooring material, whether hardwood, tile, or laminate, is then carefully laid out and secured. Precision cutting ensures the perfect fit around edges and corners. Finally, the flooring is finished with sealants or coatings, enhancing both its durability and appearance. This thorough process results in a smooth, long-lasting floor that elevates the aesthetic of any space.",
       "steps": [
         {
           "step": 1,
@@ -86,7 +88,8 @@
       ]
     },
     {
-      "category": "Roofing",
+      "category": "Repairs",
+      "info":"The repair process begins with a thorough assessment to identify and understand the issues at hand. Next, any damaged areas are cleaned and prepared for repairs. This may involve removing old or broken materials, sanding surfaces, and ensuring a stable foundation for new work. The repair itself is then carried out, whether it's patching up holes, fixing structural issues, or replacing damaged components. After the repair, the area is cleaned and finished, which might include painting or sealing to blend seamlessly with the surrounding space. This meticulous process ensures that repairs are both effective and visually appealing, restoring the functionality and aesthetics of the area.",
       "steps": [
         {
           "step": 1,
@@ -123,6 +126,7 @@
     {
       "category": "Carpentry",
       "bgimg":"../images/Carpentry-bg.png",
+      "info":"The carpentry house renovation process begins with a detailed assessment of the existing structure and design requirements. This includes planning and designing the new layout or modifications. Skilled carpenters then proceed with precise measurements and cutting of wood or other materials to fit the design specifications. Structural elements such as framing, cabinetry, and trim are constructed and installed with attention to detail. Any necessary adjustments are made to ensure a perfect fit and finish. Finally, the renovated areas are sanded, painted, or stained as required, resulting in a refined and functional space that enhances the home's overall appeal.",
       "steps": [
         {
           "step": 1,
@@ -165,6 +169,7 @@
     {
       "category": "Kitchen Renovation",
       "bgimg":"../images/Kitchen-bg.jpg",
+      "info":"The kitchen renovation process begins with a comprehensive design consultation to plan the layout, style, and functionality of the new space. After finalizing the design, the existing kitchen is carefully demolished, with attention to safely removing old fixtures, cabinets, and appliances. The next step involves addressing any structural changes, such as updating plumbing and electrical systems to accommodate new installations. New cabinetry, countertops, and flooring are then installed, followed by the placement of appliances and fixtures. Finally, finishing touches such as painting, tiling, and hardware installation complete the renovation, resulting in a refreshed and modern kitchen that enhances both aesthetics and functionality.",
       "steps": [
         {
           "step": 1,
@@ -207,6 +212,7 @@
     {
       "category": "Luxury Bathroom",
       "bgimg":"../images/LuxuryBathroom.jpg",
+      "info":"The luxury bathroom renovation process begins with a detailed design consultation to create a bespoke plan that reflects high-end aesthetics and personal preferences. This is followed by careful demolition of the existing bathroom, ensuring that any structural modifications are completed as needed. Plumbing and electrical systems are updated to support luxurious fixtures and advanced features. High-quality materials, such as custom cabinetry, premium tiles, and elegant countertops, are then installed with precision. Spa-like elements, such as a soaking tub, rain shower, and heated floors, are integrated. Finally, finishing touches, including sophisticated lighting, stylish accessories, and meticulous detailing, are added to create a serene and opulent bathroom retreat.",
       "steps": [
         {
           "step": 1,

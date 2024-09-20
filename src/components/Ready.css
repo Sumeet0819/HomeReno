@@ -17,7 +17,7 @@
 
 .button-2 {
   height: 52px;
-  padding: 0 20px;
+  padding: 0 30px;
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
@@ -101,7 +101,7 @@
   }
 
   .button-2 {
-    font-size: 12px;
-    padding: 0 8px;
+    font-size: 18px;
+    padding: 0 30px;
   }
 }

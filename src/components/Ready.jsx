@@ -1,5 +1,6 @@
 import React from "react";
 import "./Ready.css";
+import RequestEstimateButton from "./RequestEstimateButton";
 export default function Ready() {
   return (
     <div className="ready">
@@ -9,7 +10,7 @@ export default function Ready() {
           Join us today and let our experts help you achieve your goals with
           tailored solutions that meet your needs.
         </p>
-        <button className="button-2">Request Estimate</button>
+        <RequestEstimateButton/>
       </div>
     </div>
   );

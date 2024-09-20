@@ -1,5 +1,5 @@
 import './App.css';
-import Home from './components/Home';
+import Home from './components/home-renovation-interior-design';
 import Navbar from './components/Navbar';
 import Gallery from './components/Gallery';
 import ViewProject from './components/ViewProject'

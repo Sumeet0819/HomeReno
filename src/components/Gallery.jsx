@@ -70,12 +70,6 @@ export default function Gallery() {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
-      id: 10,
-      category: "Painting",
-      img: () => import("../images/painting/painting-10.jpg"),
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    },
-    {
       id: 11,
       category: "Painting",
       img: () => import("../images/painting/painting-11.jpg"),

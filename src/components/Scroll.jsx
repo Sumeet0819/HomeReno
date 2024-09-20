@@ -45,7 +45,7 @@ export default function Scroll() {
           }}
           onClick={() => handleClick()}
         >
-          View More
+          <span className="btn-txt" >View More</span>
         </button>
       </div>
     </div>

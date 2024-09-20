@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Ourservices.css";
+import RequestEstimateButton from "./RequestEstimateButton";
 
 export default function Ourservices() {
   const [processSteps, setProcessSteps] = useState([]);
   const [bgimg, setBgimg] = useState("");
+  const [info, setInfo] = useState("");
+  const [heading, setHeading] = useState("");
   const { category } = useParams();
 
   useEffect(() => {
@@ -22,6 +25,8 @@ export default function Ourservices() {
         if (categoryData) {
           setProcessSteps(categoryData.steps);
           setBgimg(categoryData.bgimg || "");
+          setInfo(categoryData.info || ""); // Set the 'info' field
+          setHeading(categoryData.heading || ""); // Set the 'heading' field
         }
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -45,21 +50,12 @@ export default function Ourservices() {
         >
           <div className="text">
             <h1>{category}</h1>
-            <p>
-              Our painting services include interior and exterior painting, trim
-              work, and color consulting.
-            </p>
-            <button className="button-1">Request Estimate</button>
+            <p>{info}</p> {/* Dynamically fetched info */}
+            <RequestEstimateButton/>
           </div>
         </div>
         <div className="process-heading">
           <h1>Our {category} Process</h1>
-          <p>
-            Painting not only enhances the aesthetic appeal of your home but
-            also provides essential protection against the elements. A
-            professionally executed exterior paint job by our team can breathe
-            new life into your home.
-          </p>
         </div>
         <div className="process">
           {processSteps.map((step) => (

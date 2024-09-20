@@ -28,11 +28,18 @@ header nav {
   }
   
   header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: auto;
     font-size: 1.3rem;
     font-weight: bold;
+    text-align: center;
   }
-  
+  .logo img{
+    width:45px;
+    height:45px;
+  }
   .nav-links {
     display: flex;
     gap: 20px;
@@ -43,24 +50,6 @@ header nav {
     padding: 10px;
     font-weight: 600;
   }
-  
-  /* Button Styles */
-  .button-3 {
-    padding: 8px;
-    margin: 0 10px;
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 2px;
-    font-weight: 600;
-    font-family: "Quattrocento Sans", sans-serif;
-  }
-  
-  .button-3:hover {
-    background-color: #da9f86;
-    color: #fff;
-  }
-  
   /* Hamburger Menu Styles */
   .hamburger {
     display: none;
@@ -117,17 +106,10 @@ header nav {
       text-align: center;
       width: 100%;
     }
-    .button-3{
-      display: none;
-    }
   }
-  
   @media (max-width: 480px) {
     .nav-links a {
       font-size: 0.9em;
-    }
-    .button-3{
-      display: none;
     }
   }
   

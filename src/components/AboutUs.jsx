@@ -85,7 +85,7 @@ export default function AboutUs() {
           </p>
           <p>
             For inquiries, contact us at{" "}
-            <a href="mailto:contact@omluxebrush.com">contact@omluxebrush.com</a>.
+            <a href="mailto:omluxebrush@gmail.com">omluxebrush@gmail.com</a>.
           </p>
         </div>
     </>
