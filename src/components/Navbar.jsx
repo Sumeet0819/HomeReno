@@ -32,7 +32,7 @@ export default function Navbar() {
       <nav className={`header ${fix ? "fixed" : ""}`}>
         <div className="logo">
         <a href="/" className="logo">
-  <img src="./images/logo.png" alt="OmLuxe-Brush Logo" className="logo-image"/>OmLuxe-Brush
+  <img src="./images/logo.png" alt="OmLuxe-Brush Logo" className="logo-image"/>Home-Reno
 </a>
         </div>
         <div className={`nav-links ${menuOpen ? "menu-active" : ""}`}>
